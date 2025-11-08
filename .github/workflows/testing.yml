@@ -1,6 +1,7 @@
 name: Testing - build and release app
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'develop'
