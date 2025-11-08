@@ -1,0 +1,1802 @@
+<resources>
+    <string name="app_name" translatable="false">Key Mapper</string>
+    <string name="slogan">释放你的按键潜力！</string>
+
+    <string name="accessibility_service_explanation">Key Mapper 需要使用无障碍服务，以便在您离开应用时检测并更改您的按键操作。只有在启用了无障碍服务后，您的按键映射才会生效。创建触发器和测试操作时也必须开启此服务。</string>
+    <string name="selection_count"> 已选择</string>
+    <string name="ime_service_label" translatable="false">Key Mapper 输入法</string>
+    <string name="enable">启用</string>
+    <string name="shrug" translatable="false">¯\\_(ツ)_/¯</string>
+    <string name="recyclerview_placeholder">¯\\_(ツ)_/¯\n\n这里空空如也！</string>
+    <string name="choose_action_warning_requires_root">需要 Root 权限</string>
+    <string name="no_actions">无动作</string>
+    <string name="no_trigger">无触发器</string>
+    <string name="middot" translatable="false">•</string>
+    <string name="unknown_device_name">未知设备名称</string>
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="follow_system">跟随系统</string>
+    <string name="this_device">此设备</string>
+    <string name="any_device">任何设备</string>
+    <string name="slider_default">默认</string>
+    <string name="button_enable_accessibility_service">启用无障碍服务</string>
+    <string name="button_restart_accessibility_service">重启无障碍服务</string>
+    <string name="share_backup">分享</string>
+    <string name="app_list_empty">这里空空如也！</string>
+    <string name="ui_element_list_empty">Key Mapper 未检测到任何交互。尝试显示更多元素。</string>
+    <string name="stop_repeating_dot_dot_dot">停止重复当…</string>
+    <string name="stop_repeating_when_trigger_released">触发器释放时</string>
+    <string name="stop_repeating_trigger_pressed_again">触发器再次按下时</string>
+    <string name="stop_repeating_limit_reached">达到限制时</string>
+
+    <string name="stop_holding_down_when_trigger_released">触发器释放时</string>
+    <string name="stop_holding_down_trigger_pressed_again">触发器再次按下时</string>
+
+    <string name="show_hidden_apps">显示隐藏的应用</string>
+    <string name="modifiers">修饰键</string>
+    <string name="chip_play_store" translatable="false">Play 商店</string>
+    <string name="chip_fdroid" translatable="false">F-Droid</string>
+    <string name="chip_github" translatable="false">GitHub</string>
+    <string name="tap_coordinate_screenshot_message">重要提示！！！这些坐标仅在您的显示屏方向与屏幕截图相同时才正确！此操作将取消您正在屏幕上进行的任何触摸或手势。\n\n如果您需要帮助查找屏幕上某点的坐标，请截取屏幕截图，然后在您希望此操作点击的位置点击屏幕截图。</string>
+    <string name="pinch_screen_x_y_note">注意：使用\"捏合\"时，X 和 Y 是结束坐标；使用\"张开\"时，X 和 Y 是开始坐标。</string>
+    <string name="tap_actions_to_fix">点击动作以修复！</string>
+    <string name="tap_constraints_to_fix">点击约束条件以修复！</string>
+    <string name="shortcut_label_action">执行动作</string>
+    <string name="hold_down_until_trigger_is_dot_dot_dot">按住直到触发器…</string>
+    <string name="from_no_device">无设备</string>
+    <string name="intent_extras_recycler_view_placeholder">¯\\_(ツ)_/¯\n\n无附加数据！</string>
+    <string name="content_description_done_configuring_key_event">完成配置按键事件动作</string>
+    <string name="content_description_done_configuring_coordinate">完成选择坐标</string>
+    <string name="clip_key_mapper_log">Key Mapper 日志</string>
+
+    <string name="whats_new">更新内容</string>
+    <string name="caption_action_type_sound">您可以使用系统铃声，也可以选择自定义声音文件。\n\n自定义声音文件将被复制到 Key Mapper 的私有数据文件夹，这意味着即使文件被移动或删除，您的动作仍然有效。它也会随您的按键映射在 zip 文件夹中一起备份。
+    您可以在设置中删除已保存的声音文件。</string>
+
+    <string name="caption_no_paired_bt_devices">找不到任何已配对的设备。蓝牙开启了吗？</string>
+    <string name="create_key_map_shortcut_footer">点击一个按键映射以用作快捷方式。</string>
+    <string name="create_key_map_shortcut_app_title">创建按键映射快捷方式</string>
+
+    <string name="switch_enabled">已启用</string>
+    <string name="switch_disabled">已禁用</string>
+
+    <string name="reset">重置</string>
+    <string name="enable_device_admin_message">一旦您启用了设备管理员，如果您想卸载 Key Mapper，则必须停用它。</string>
+
+    <string name="action_title_wait">等待 %s 毫秒</string>
+
+    <string name="action_title_intent_start_activity">启动活动：%s</string>
+    <string name="action_title_intent_start_service">启动服务：%s</string>
+    <string name="action_title_intent_send_broadcast">发送广播：%s</string>
+
+    <string name="clipboard_label_keymap_uid">按键映射 ID</string>
+
+    <string name="trigger_error_dnd_access_denied">需要权限才能在\"请勿打扰\"模式下正常工作！</string>
+    <string name="trigger_error_cant_detect_in_phone_call">此触发器在响铃或通话期间将无法工作！</string>
+    <string name="trigger_error_cant_detect_in_phone_call_explanation">Android 不允许无障碍服务在手机响铃或通话时检测音量键按下，但允许输入法服务检测它们。因此，如果您希望此触发器工作，必须使用 Key Mapper 输入法。</string>
+    <string name="trigger_error_gesture_stroke_count_too_high">由于 Android 限制，执行手势的手指过多。</string>
+    <string name="trigger_error_gesture_duration_too_high">由于 Android 限制，手势持续时间过长。</string>
+    <string name="trigger_error_dpad_ime_not_selected">您必须使用 Key Mapper 输入法，方向键触发器才能工作！</string>
+    <string name="trigger_error_system_bridge_unsupported">此 Android 版本不支持 PRO 模式</string>
+    <string name="trigger_error_system_bridge_disconnected">PRO 模式未启动！</string>
+    <string name="trigger_error_evdev_device_not_found">触发器设备未连接！</string>
+    <string name="trigger_error_migrate_screen_off_key_map">迁移此屏幕关闭触发器</string>
+
+    <string name="home_error_is_battery_optimised">禁用电池优化。</string>
+    <string name="home_error_key_maps_paused">您的按键映射已暂停！</string>
+    <string name="home_error_key_maps_paused_button">取消暂停</string>
+    <string name="home_error_accessibility_service_is_disabled">需要开启无障碍服务，您的按键映射才能工作！</string>
+    <string name="home_error_accessibility_service_is_crashed">您的手机在 Key Mapper 处于后台时杀死了它，或者它崩溃了！</string>
+    <string name="home_success_accessibility_service_is_enabled">无障碍服务已启用！您的按键映射应该可以工作了。</string>
+    <string name="home_error_logging_enabled">额外日志记录已开启！如果您不是在尝试解决问题，请关闭此功能。</string>
+    <string name="home_error_logging_enabled_button">关闭</string>
+    <string name="home_error_notification_permission">开启通知以获得更好的屏幕消息、更多操作和服务更新。</string>
+
+    <string name="title_about">关于</string>
+    <!--  动作描述  -->
+    <string name="description_open_app">打开 %s</string>
+    <string name="description_text_block">输入 \"%s\"</string>
+    <string name="description_keyevent">输入 %s%s</string>
+    <string name="description_keyevent_from_device">从 %s 输入 %s%s</string>
+    <string name="description_url">打开 %s</string>
+    <string name="description_tap_coordinate_default">点击屏幕 (%d, %d)</string>
+    <string name="description_tap_coordinate_with_description">点击屏幕 (%s)</string>
+    <string name="description_swipe_coordinate_default">使用 %d 根手指在 %d 毫秒内从 (%d,%d) 滑动到 (%d,%d)</string>
+    <string name="description_swipe_coordinate_with_description">使用 %d 根手指在 %d 毫秒内从 (%d,%d) 滑动到 (%d,%d) (%s)</string>
+    <string name="description_pinch_coordinate_default">使用 %d 根手指在 (%d,%d) 上%s，捏合距离为 %d 像素，持续 %d 毫秒</string>
+    <string name="description_pinch_coordinate_with_description">使用 %d 根手指在 (%d,%d) 上%s，捏合距离为 %d 像素，持续 %d 毫秒 (%s)</string>
+    <string name="description_phone_call">呼叫 %s</string>
+    <string name="description_sound">播放声音：%s</string>
+    <string name="description_sound_unknown">播放未知声音</string>
+    <!--  动作描述  -->
+
+    <!--  标题  -->
+    <string name="option_list_header">选项：</string>
+    <string name="action_list_header">动作：</string>
+    <string name="trigger_header">触发器：</string>
+    <string name="constraint_list_header">约束条件：</string>
+    <string name="fingerprint_gesture_up">向上滑动</string>
+    <string name="fingerprint_gesture_down">向下滑动</string>
+    <string name="fingerprint_gesture_left">向左滑动</string>
+    <string name="fingerprint_gesture_right">向右滑动</string>
+    <string name="header_intent_extras">附加数据</string>
+    <!--  标题  -->
+
+    <!--  提示文本  -->
+    <string name="hint_coordinate_x" translatable="false">X</string>
+    <string name="hint_coordinate_y" translatable="false">Y</string>
+    <string name="hint_coordinate_x_start">起始 X</string>
+    <string name="hint_coordinate_y_start">起始 Y</string>
+    <string name="hint_coordinate_x_end">结束 X</string>
+    <string name="hint_coordinate_y_end">结束 Y</string>
+    <string name="hint_coordinate_distance">捏合距离 (像素)</string>
+    <string name="hint_coordinate_pinch_type">捏合类型</string>
+    <string name="hint_coordinate_type_pinch_in">捏合</string>
+    <string name="hint_coordinate_type_pinch_out">张开</string>
+    <string name="hint_keycode">键码</string>
+    <string name="hint_from_device">来源设备</string>
+    <string name="hint_shortcut_name">快捷方式名称</string>
+    <string name="hint_tap_coordinate_title">坐标描述 (可选)</string>
+    <string name="hint_create_text_action">要输入的文本</string>
+    <string name="hint_create_url_action">要打开的网址</string>
+    <string name="hint_create_phone_call_action">要呼叫的电话号码</string>
+    <string name="hint_create_sms_action_number">要发送短信的电话号码</string>
+    <string name="hint_create_sms_action_message">要发送的消息</string>
+
+    <string name="hint_intent_action">动作</string>
+    <string name="hint_intent_categories">类别</string>
+    <string name="hint_intent_data">数据</string>
+    <string name="hint_intent_package">包名</string>
+    <string name="hint_intent_class">类名</string>
+    <string name="hint_intent_extra_name">名称</string>
+    <string name="hint_intent_extra_value_with_type">值 (%s)</string>
+    <string name="hint_intent_description">Key Mapper 的描述 (必需)</string>
+    <string name="hint_intent_flags">标志</string>
+    <string name="hint_sound_file_description">声音文件描述</string>
+    <string name="hint_wifi_ssid">WiFi 网络 SSID</string>
+    <!--  提示文本  -->
+
+    <!--  单选按钮  -->
+    <string name="radio_button_parallel">同时按下</string>
+    <string name="radio_button_sequence">依次按下</string>
+    <string name="radio_button_and">与</string>
+    <string name="radio_button_or">或</string>
+    <string name="radio_button_short_press">短按</string>
+    <string name="radio_button_long_press">长按</string>
+    <string name="radio_button_double_press">双击</string>
+    <string name="radio_button_short">短</string>
+    <string name="radio_button_long">长</string>
+    <string name="radio_button_double">双</string>
+    <string name="radio_button_intent_extra_value_true">真</string>
+    <string name="radio_button_intent_extra_value_false">假</string>
+    <string name="radio_button_intent_target_activity">活动</string>
+    <string name="radio_button_intent_target_service">服务</string>
+    <string name="radio_button_intent_target_broadcast_receiver">广播接收器</string>
+    <!--  单选按钮  -->
+
+    <!--  标签页  -->
+    <string name="tab_trigger_and_actions">触发器和动作</string>
+    <string name="tab_constraints_and_more">约束条件和更多</string>
+    <string name="tab_trigger">触发器</string>
+    <string name="tab_actions">动作</string>
+    <string name="tab_constraints">约束条件</string>
+    <string name="tab_options">选项</string>
+    <!--  标签页  -->
+
+    <!--  导航参数 ID  -->
+    <!--  导航参数 ID  -->
+
+    <!--  提示消息  -->
+    <string name="toast_chose_keyboard">已选择 %s</string>
+    <string name="toast_backup_successful">备份成功！</string>
+    <string name="toast_backup_failed">备份失败！</string>
+    <string name="toast_restore_successful">恢复成功！</string>
+    <string name="toast_restore_failed">恢复失败！</string>
+    <string name="toast_automatic_backup_successful">自动备份成功！</string>
+    <string name="toast_automatic_backup_failed">自动备份失败！</string>
+    <string name="toast_screenshot_taken">已截取屏幕截图</string>
+    <string name="toast_incorrect_screenshot_resolution">屏幕截图分辨率与此设备的分辨率不匹配！</string>
+    <string name="toast_copied_keymap_uid_to_clipboard">已复制按键映射 UUID 到剪贴板</string>
+    <string name="toast_triggered_keymap">您触发了一个按键映射</string>
+    <string name="toast_copied_log">已复制日志</string>
+    <string name="toast_no_sound_files">您没有保存任何声音文件！</string>
+    <string name="toast_granted_itself_write_secure_settings_with_shizuku">Key Mapper 已使用 Shizuku 授予自身 WRITE_SECURE_SETTINGS 权限</string>
+    <string name="toast_granted_itself_write_secure_settings_with_root">Key Mapper 已使用 Root 权限授予自身 WRITE_SECURE_SETTINGS 权限</string>
+    <string name="toast_microphone_muted">麦克风已静音</string>
+    <string name="toast_microphone_unmuted">麦克风已取消静音</string>
+    <!--  提示消息  -->
+
+    <!-- 额外标签 -->
+    <string name="extra_label_sequence_trigger_timeout">序列触发器超时</string>
+    <string name="extra_label_long_press_delay_timeout">长按延迟</string>
+    <string name="extra_label_double_press_delay_timeout">双击超时</string>
+    <string name="extra_label_repeat_delay">重复开始前的延迟</string>
+    <string name="extra_label_repeat_limit">重复限制</string>
+    <string name="extra_label_repeat_rate">重复间隔…</string>
+    <string name="extra_label_vibration_duration">振动持续时间</string>
+    <string name="extra_label_action_multiplier">执行次数</string>
+    <string name="extra_label_action_multiplier_with_repeat">每次重复执行次数</string>
+    <string name="extra_label_delay_before_next_action">下一个动作前的延迟</string>
+    <string name="extra_label_hold_down_duration">按住持续时间</string>
+    <string name="extra_label_swipe_duration">滑动持续时间 (毫秒)</string>
+    <string name="extra_label_swipe_finger_count">手指数量</string>
+    <string name="extra_label_swipe_select_start_end_label">通过屏幕截图设置坐标</string>
+    <string name="extra_label_swipe_select_start_end_start">起始点</string>
+    <string name="extra_label_swipe_select_start_end_end">结束点</string>
+    <string name="extra_label_pinch_duration">捏合持续时间 (毫秒)</string>
+    <string name="extra_label_pinch_finger_count">手指数量</string>
+    <!-- 额外标签 -->
+
+    <!-- 约束条件 -->
+    <string name="constraint_app_foreground_description">%s 在前台</string>
+    <string name="constraint_app_not_foreground_description">%s 不在前台</string>
+    <string name="constraint_app_playing_media_description">%s 正在播放媒体</string>
+    <string name="constraint_app_not_playing_media_description">%s 未在播放媒体</string>
+    <string name="constraint_bt_device_connected_description">%s 已连接</string>
+    <string name="constraint_bt_device_disconnected_description">%s 已断开连接</string>
+    <string name="constraint_screen_on_description">屏幕开启</string>
+    <string name="constraint_screen_off_description">屏幕关闭</string>
+    <string name="constraint_flashlight_off_description">手电筒关闭</string>
+    <string name="constraint_flashlight_on_description">手电筒开启</string>
+    <string name="constraint_front_flashlight_off_description">前置手电筒关闭</string>
+    <string name="constraint_front_flashlight_on_description">前置手电筒开启</string>
+
+    <string name="constraint_mode_and">与</string>
+    <string name="constraint_mode_or">或</string>
+
+    <string name="constraint_choose_app_foreground">应用在前台</string>
+    <string name="constraint_choose_app_not_foreground">应用不在前台</string>
+    <string name="constraint_choose_bluetooth_device_connected">蓝牙设备已连接</string>
+    <string name="constraint_choose_bluetooth_device_disconnected">蓝牙设备已断开连接</string>
+    <string name="constraint_choose_screen_on_description">屏幕开启</string>
+    <string name="constraint_choose_screen_off_description">屏幕关闭</string>
+    <string name="constraint_choose_orientation_0">竖屏 (0°)</string>
+    <string name="constraint_choose_orientation_90">横屏 (90°)</string>
+    <string name="constraint_choose_orientation_180">竖屏 (180°)</string>
+    <string name="constraint_choose_orientation_270">横屏 (270°)</string>
+    <string name="constraint_choose_orientation_portrait">竖屏 (任意)</string>
+    <string name="constraint_choose_orientation_landscape">横屏 (任意)</string>
+    <string name="constraint_choose_app_playing_media">应用正在播放媒体</string>
+    <string name="constraint_choose_app_not_playing_media">应用未在播放媒体</string>
+    <string name="constraint_choose_media_playing">媒体正在播放</string>
+    <string name="constraint_choose_media_not_playing">无媒体播放</string>
+    <string name="constraint_flashlight_on">手电筒开启</string>
+    <string name="constraint_flashlight_off">手电筒关闭</string>
+
+    <string name="constraint_wifi_on">WiFi 开启</string>
+    <string name="constraint_wifi_off">WiFi 关闭</string>
+    <string name="constraint_wifi_connected">已连接到 WiFi 网络</string>
+    <string name="constraint_wifi_disconnected">已断开 WiFi 网络连接</string>
+    <string name="constraint_wifi_message_cant_list_networks">如果应匹配任何 WiFi 网络，请留空。</string>
+    <string name="constraint_wifi_connected_description">已连接到 %s WiFi</string>
+    <string name="constraint_wifi_disconnected_description">已断开 %s WiFi 连接</string>
+    <string name="constraint_wifi_connected_any_description">已连接到任何 WiFi</string>
+    <string name="constraint_wifi_disconnected_any_description">未连接到任何 WiFi</string>
+
+    <string name="constraint_ime_chosen">输入法已选择</string>
+    <string name="constraint_ime_chosen_description">%s 已选择</string>
+    <string name="constraint_ime_not_chosen">输入法未选择</string>
+    <string name="constraint_ime_not_chosen_description">%s 未选择</string>
+
+    <string name="constraint_device_is_locked">设备已锁定</string>
+    <string name="constraint_device_is_unlocked">设备未锁定</string>
+    <string name="constraint_lock_screen_showing">锁屏界面正在显示</string>
+    <string name="constraint_lock_screen_not_showing">锁屏界面未显示</string>
+
+    <string name="constraint_in_phone_call">通话中</string>
+    <string name="constraint_not_in_phone_call">未在通话</string>
+    <string name="constraint_phone_ringing">电话响铃</string>
+
+    <string name="constraint_charging">充电中</string>
+    <string name="constraint_discharging">放电中</string>
+    <string name="constraint_hinge_closed">铰链闭合</string>
+    <string name="constraint_hinge_open">铰链打开</string>
+    <string name="constraint_hinge_closed_description">铰链已闭合</string>
+    <string name="constraint_hinge_open_description">铰链已打开</string>
+
+    <string name="orientation_0">竖屏 (0°)</string>
+    <string name="orientation_90">横屏 (90°)</string>
+    <string name="orientation_180">竖屏 (180°)</string>
+    <string name="orientation_270">横屏 (270°)</string>
+
+    <string name="constraint_time">时间</string>
+    <string name="constraint_time_formatted">时间在 %s 和 %s 之间</string>
+    <string name="constraint_time_bottom_sheet_title">时间约束</string>
+    <string name="constraint_time_bottom_sheet_start_time">开始时间</string>
+    <string name="constraint_time_bottom_sheet_edit_start_time">编辑开始时间</string>
+    <string name="constraint_time_bottom_sheet_end_time">结束时间</string>
+    <string name="constraint_time_bottom_sheet_edit_end_time">编辑结束时间</string>
+    <!-- 约束条件 -->
+
+    <!-- 点击类型 -->
+    <string name="clicktype_long_press">长按</string>
+    <string name="clicktype_double_press">双击</string>
+    <!-- 点击类型 -->
+
+    <!-- 网址 -->
+    <string name="url_play_store_listing" translatable="false">https://play.google.com/store/apps/details?id=io.github.sds100.keymapper</string>
+    <string name="url_license" translatable="false">https://github.com/keymapperorg/KeyMapper/blob/master/LICENSE.md</string>
+    <string name="url_changelog" translatable="false">https://github.com/keymapperorg/KeyMapper/blob/develop/CHANGELOG.md</string>
+    <string name="url_translate" translatable="false">https://docs.keymapper.club/contributing/#translating?utm_source=in_app</string>
+    <string name="url_privacy_policy" translatable="false">https://github.com/keymapperorg/KeyMapper/blob/master/PRIVACY_POLICY.md</string>
+    <string name="url_discord_server_invite" translatable="false">https://discord.gg/Suj6nyw</string>
+    <string name="url_trigger_by_intent_guide" translatable="false">https://docs.keymapper.club/redirects/trigger-by-intent</string>
+    <string name="url_trigger_guide" translatable="false">https://docs.keymapper.club/redirects/trigger</string>
+    <string name="url_trigger_options_guide" translatable="false">https://docs.keymapper.club/redirects/trigger-options</string>
+    <string name="url_action_guide" translatable="false">https://docs.keymapper.club/redirects/action</string>
+    <string name="url_constraints_guide" translatable="false">https://docs.keymapper.club/redirects/constraints</string>
+    <string name="url_fingerprint_map_options_guide" translatable="false">https://docs.keymapper.club/redirects/fingerprint-map-options</string>
+    <string name="url_quick_start_guide" translatable="false">https://docs.keymapper.club/redirects/quick-start</string>
+    <string name="url_faq" translatable="false">https://docs.keymapper.club/redirects/faq</string>
+    <string name="url_grant_write_secure_settings_guide" translatable="false">https://docs.keymapper.club/redirects/grant-write-secure-settings</string>
+    <string name="url_dont_kill_my_app" translatable="false">https://dontkillmyapp.com</string>
+    <string name="url_keymap_action_options_guide" translatable="false">https://docs.keymapper.club/redirects/keymap-action-options</string>
+    <string name="url_trigger_key_options_guide" translatable="false">https://docs.keymapper.club/redirects/trigger-key-options</string>
+    <string name="url_android_11_bug_reset_id_work_around_setting_guide" translatable="false">https://docs.keymapper.club/redirects/android-11-device-id-bug-work-around</string>
+    <string name="url_cant_find_accessibility_settings_issue" translatable="false">https://docs.keymapper.club/redirects/cant-find-accessibility-settings</string>
+    <string name="url_restricted_setting" translatable="false">https://docs.keymapper.club/redirects/restricted-settings</string>
+    <string name="url_shizuku_setting_benefits" translatable="false">https://docs.keymapper.club/redirects/shizuku-benefits</string>
+    <string name="url_settings_guide" translatable="false">https://docs.keymapper.club/redirects/settings</string>
+    <string name="url_intent_set_flags_help" translatable="false">https://developer.android.com/reference/android/content/Intent#setFlags(int)</string>
+    <string name="url_github_repo" translatable="false">https://github.com/keymapperorg/KeyMapper</string>
+    <string name="url_rate" translatable="false">https://play.google.com/store/apps/details?id=io.github.sds100.keymapper</string>
+    <string name="url_website" translatable="false">https://docs.keymapper.club?utm_source=in_app</string>
+    <string name="url_advanced_triggers" translatable="false">https://docs.keymapper.club/redirects/advanced-triggers</string>
+    <string name="url_assistant_trigger_instructions" translatable="false">https://docs.keymapper.club/redirects/assistant-trigger</string>
+    <string name="url_floating_buttons_guide" translatable="false">https://docs.keymapper.club/redirects/floating-buttons</string>
+    <string name="url_floating_layouts_guide" translatable="false">https://docs.keymapper.club/redirects/floating-layouts</string>
+    <string name="url_floating_button_config_guide" translatable="false">https://docs.keymapper.club/redirects/floating-button-config</string>
+
+    <string name="url_github_create_issue_bug" translatable="false">https://github.com/keymapperorg/KeyMapper/issues/new/choose</string>
+    <string name="url_youtube_video" translatable="false">https://youtube.com/shorts/v7l2JYP14L0?feature=share</string>
+    <!-- 网址 -->
+
+    <!-- 活动标题 -->
+    <!-- 活动标题 -->
+
+    <!--  错误报告幻灯片-->
+
+    <string name="slide_title_read_dont_kill_my_app">关闭应用杀进程</string>
+    <string name="slide_description_read_dont_kill_my_app">按照 dontkillmyapp.com 上的精彩指南操作，该指南展示了如何关闭手机上所有应用杀进程\"功能\"。\n\n阅读指南后，您需要转到下一张幻灯片并重启无障碍服务。</string>
+    <string name="slide_button_read_dont_kill_my_app">打开指南</string>
+
+    <string name="slide_title_restart_accessibility_service">重启无障碍服务</string>
+    <string name="slide_description_restart_accessibility_service">必须重启无障碍服务。将其关闭再打开。</string>
+
+    <string name="slide_title_create_bug_report">报告错误</string>
+    <string name="slide_description_create_bug_report">通过点击\"创建报告\"选择保存错误报告的位置。下一张幻灯片将告诉您如何将其发送给开发者。</string>
+    <string name="slide_button_create_bug_report">创建报告</string>
+
+    <string name="slide_title_share_bug_report">分享报告</string>
+    <string name="slide_description_share_bug_report">有 2 种方式可以将错误报告分享给开发者。要么加入 Discord 服务器，要么创建 GitHub Issue。请确保在消息中附上错误报告！</string>
+    <string name="slide_button_share_discord">Discord</string>
+    <string name="slide_button_share_github">GitHub</string>
+
+    <!--  错误报告幻灯片-->
+
+    <!-- 菜单动作标题-->
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="action_search">搜索</string>
+    <string name="action_help">帮助</string>
+    <string name="action_report_bug">报告错误</string>
+    <string name="action_change_keyboard">显示输入法选择器</string>
+    <string name="action_save">保存</string>
+    <string name="action_restore">恢复</string>
+    <string name="action_backup_everything">备份所有内容</string>
+    <string name="action_tap_to_pause_keymaps">点击暂停</string>
+    <string name="action_tap_to_resume_keymaps">点击恢复</string>
+    <string name="action_share_log">分享</string>
+    <string name="action_short_log_message">切换简短消息</string>
+    <string name="action_copy_log">复制</string>
+    <string name="action_clear_log">清除</string>
+    <!-- 菜单动作标题-->
+
+    <!-- 按钮标题 -->
+    <string name="button_add_action">添加动作</string>
+    <string name="button_record_trigger">点击录制触发器</string>
+    <string name="button_advanced_triggers">高级触发器</string>
+    <string name="button_advanced_triggers_badge">新功能！</string>
+    <string name="button_done">完成</string>
+    <string name="button_fix">修复</string>
+    <string name="button_recording_trigger_countdown">按下您的按键</string>
+    <string name="button_add_constraint">添加约束条件</string>
+    <string name="button_choose_keycode">选择键码</string>
+    <string name="button_add_intent_extra">添加附加数据</string>
+    <string name="button_create_keymap_shortcut_in_launcher_enabled">创建启动器快捷方式</string>
+    <string name="button_create_keymap_shortcut_in_launcher_disabled">手动创建快捷方式</string>
+    <string name="button_open_trigger_keymap_from_intent_guide">Intent 指南</string>
+    <string name="button_help">帮助</string>
+    <string name="button_pick_coordinate_select_screenshot">选择屏幕截图 (可选)</string>
+    <string name="button_config_intent_choose_activity">选择活动</string>
+    <string name="button_config_intent_set_flags">设置标志</string>
+    <string name="button_slider_repeat_no_limit">无限制</string>
+    <string name="button_choose_sound_file">选择声音文件</string>
+    <string name="button_choose_system_sound_file">选择系统铃声</string>
+    <string name="button_edit_action">编辑动作</string>
+    <string name="button_replace_action">替换动作</string>
+    <!-- 按钮标题 -->
+
+    <!-- 对话框内容 -->
+    <string name="dialog_title_root_prompt">需要 Root 权限！</string>
+    <string name="dialog_title_cant_find_accessibility_settings_page">找不到无障碍设置页面</string>
+    <string name="dialog_title_unsaved_changes">未保存的更改</string>
+    <string name="dialog_message_unsaved_changes"> 您有未保存的更改。如果丢弃，您的编辑将丢失。</string>
+    <string name="dialog_message_root_prompt">请在您的 Root 管理应用（例如 Magisk）中授予 Key Mapper Root 权限。</string>
+
+    <string name="dialog_title_write_secure_settings">授予 WRITE_SECURE_SETTINGS 权限</string>
+    <string name="dialog_message_write_secure_settings">授予此权限需要 PC/Mac。请阅读在线指南。</string>
+
+    <string name="dialog_message_cant_find_accessibility_settings_page">您的设备似乎没有无障碍服务设置页面。点击\"指南\"阅读在线指南，其中解释了如何解决此问题。</string>
+    <string name="dialog_message_parallel_trigger_order">您必须按照它们列出的顺序按住按键。</string>
+    <string name="dialog_message_sequence_trigger_explanation">输入此触发器存在超时时间。您可以在\"选项\"标签页中更改此超时时间。</string>
+    <string name="tip_parallel_trigger_title">如何使用此触发器</string>
+    <string name="tip_sequence_trigger_title">序列触发器</string>
+    <string name="dialog_message_bt_constraint_limitation">Android 不允许应用获取已连接（非配对）蓝牙设备的列表。应用只能检测到它们何时连接和断开连接。因此，如果在无障碍服务启动时您的蓝牙设备已经连接到您的设备，您将需要重新连接它，以便应用知道它已连接。</string>
+    <string name="dialog_title_change_location_or_disable">自动备份</string>
+    <string name="dialog_message_change_location_or_disable">更改位置还是关闭自动备份？</string>
+    <string name="dialog_message_password_screen_lock_warning">如果您选择了任何其他屏幕锁定方式，例如 PIN 码或图案，则无需担心。但如果您使用的是密码屏幕锁定，您将*无法*解锁手机，如果您使用 Key Mapper 输入法，因为它没有 GUI。您可以授予 Key Mapper WRITE_SECURE_SETTINGS 权限，以便它可以显示通知来切换键盘。如果您点击屏幕底部的问号，会有一个关于如何执行此操作的指南。</string>
+    <string name="dialog_message_select_compatible_ime">选择用于需要输入法的动作的输入法。您以后可以通过点击主屏幕底部菜单中的\"为动作选择键盘\"来更改此设置。</string>
+    <string name="dialog_message_settings_no_external_devices_connected">无外部设备连接。</string>
+
+    <string name="dialog_title_disable_battery_optimisation">禁用电池优化</string>
+    <string name="dialog_message_disable_battery_optimisation">您<b>必须</b>阅读<b>所有</b>内容，否则您将来会感到<b>沮丧</b>！\n\n点击\"部分修复\"<b>可能</b>会阻止 Android 在应用处于后台时停止它。\n\n<b>这还不够</b>。您的 OEM 定制系统（如 MIUI 或 Samsung Experience）可能还有其他应用杀进程功能，因此您<b>必须</b>按照 dontkillmyapp.com 上的在线指南为 Key Mapper 关闭它们。</string>
+
+    <string name="dialog_message_restart_accessibility_service">通过将无障碍服务<i>关闭</i>再<i>打开</i>来重启它。</string>
+
+
+    <string name="dialog_title_key_mapper_crashed">Key Mapper 被中断</string>
+    <string name="dialog_message_key_mapper_crashed">Key Mapper 尝试在后台运行，但被系统停止。\n如果您开启了电池或内存优化，可能会发生这种情况。\n\n要解决此问题，您可以尝试遵循在线指南。完成后还应重启服务。</string>
+    <string name="dialog_button_read_dont_kill_my_app_yes">继续</string>
+    <string name="dialog_button_read_dont_kill_my_app_no">忽略</string>
+
+    <string name="dialog_title_failed_to_create_bug_report">创建错误报告失败</string>
+
+    <string name="dialog_title_home_fix_error">修复错误</string>
+
+    <string name="dialog_message_no_app_found_to_create_file">您没有安装允许为 Key Mapper 创建文件的文件应用。请安装文件管理器。</string>
+    <string name="dialog_message_no_app_found_to_choose_a_file">您没有安装允许为 Key Mapper 选择文件的文件应用。请安装文件管理器。</string>
+
+    <string name="dialog_title_accessibility_service_explanation">必须启用无障碍服务</string>
+    <string name="dialog_message_accessibility_service_explanation">@string/accessibility_service_explanation</string>
+
+    <string name="dialog_restricted_setting_message">您可能需要允许受限设置。</string>
+    <string name="dialog_restricted_setting_link_text">点击阅读说明。</string>
+
+    <string name="dialog_title_fix_dnd_trigger_error">授予\"请勿打扰\"访问权限</string>
+    <string name="dialog_message_fix_dnd_trigger_error">您将被带到设备的设置页面来管理哪些应用可以修改\"请勿打扰\"状态。这<b>在某些设备上不存在</b>，因此如果您在列表中看不到 Key Mapper，请点击不再显示。</string>
+
+    <string name="dialog_message_sort_sort_by">排序方式</string>
+    <string name="sorting_drag_and_drop_list_help">拖动手柄以调整优先级。顶部的项目最重要。您也可以点击任何项目以反转其排序顺序。</string>
+    <string name="sorting_drag_and_drop_list_help_example">示例：要首先按动作升序排序按键映射，其次按触发器降序排序，请将动作移动到第一位，触发器移动到第二位。</string>
+    <string name="drag_handle_for">%1$s 的拖动手柄</string>
+    <string name="show_example">显示示例</string>
+
+    <string name="dialog_title_request_notification_permission">开启通知</string>
+    <string name="dialog_message_request_notification_permission">某些动作和选项需要此权限才能工作。您还可以在有关于应用的重要新闻时收到通知。</string>
+
+    <string name="dialog_title_migrate_screen_off_key_map">迁移此屏幕关闭触发器</string>
+    <string name="dialog_message_migrate_screen_off_key_map">我们对造成的不便表示歉意。我们引入了一个名为 PRO 模式的*免费*功能，取代了旧的屏幕关闭重映射选项。此功能更加可靠，并且还解锁了电源键的重映射。\n\n由于其工作方式，您需要使用 PRO 模式重新录制此触发器。</string>
+    <string name="dialog_button_migrate_screen_off_key_map">继续</string>
+
+    <string name="dialog_title_grant_read_logs_permission_title">授予 READ_LOGS 权限</string>
+    <string name="dialog_title_grant_read_logs_permission_message">您需要拥有 Root 权限或已启用 PRO 模式才能生效。系统在授予此权限后将关闭应用。您需要自己再次打开它并尝试再次分享 logcat。</string>
+
+
+    <string name="pos_done">完成</string>
+    <string name="pos_kill">终止</string>
+    <string name="pos_grant_write_secure_settings_guide">指南</string>
+    <string name="pos_start_service_with_adb_guide">指南</string>
+    <string name="pos_change_location">更改</string>
+    <string name="pos_turn_off_stock_battery_optimisation">部分修复</string>
+    <string name="pos_ok">确定</string>
+    <string name="pos_restart">重启</string>
+    <string name="pos_never_show_again">不再显示</string>
+    <string name="pos_apply">应用</string>
+    <string name="pos_discard_changes">丢弃更改</string>
+    <string name="pos_save">保存</string>
+    <string name="pos_understood">明白了</string>
+    <string name="pos_turn_on">开启</string>
+    <string name="pos_proceed">继续</string>
+
+    <string name="neg_turn_off">关闭</string>
+    <string name="neg_cancel">取消</string>
+    <string name="neg_dont_show_again">不再显示</string>
+    <string name="neg_keep_editing">继续编辑</string>
+    <string name="neg_no_thanks">不用了，谢谢</string>
+
+    <string name="neutral_hide">隐藏</string>
+    <string name="neutral_go_to_dont_kill_my_app">在线指南</string>
+    <string name="neutral_go_to_settings">设置</string>
+    <string name="neutral_intent_docs">文档</string>
+    <string name="neutral_changelog">更新日志</string>
+
+    <string name="dialog_button_fix">修复</string>
+
+    <!-- 对话框内容 -->
+
+    <!-- 通知字符串 -->
+    <string name="notification_channel_toggle_mappings">暂停/恢复按键映射</string>
+    <string name="notification_channel_keyboard_hidden">键盘隐藏警告</string>
+    <string name="notification_channel_toggle_keyboard">切换 Key Mapper 输入法</string>
+    <string name="notification_channel_new_features">新功能</string>
+
+    <string name="notification_keymaps_resumed_title">运行中</string>
+    <string name="notification_keymaps_resumed_text">点击打开 Key Mapper。</string>
+    <string name="notification_action_pause">暂停</string>
+
+    <string name="notification_keymaps_paused_title">已暂停</string>
+    <string name="notification_keymaps_paused_text">点击打开 Key Mapper。</string>
+    <string name="notification_action_resume">恢复</string>
+
+    <string name="notification_action_dismiss">忽略</string>
+
+    <string name="notification_action_restart_accessibility_service">重启</string>
+
+    <string name="notification_accessibility_service_disabled_title">无障碍服务已禁用</string>
+    <string name="notification_accessibility_service_disabled_text">点击启动无障碍服务。</string>
+
+    <string name="notification_accessibility_service_crashed_title">需要重启无障碍服务！</string>
+    <string name="notification_accessibility_service_crashed_text">无障碍服务已崩溃！您的手机可能在强制终止它！点击重启无障碍服务。</string>
+
+    <!--  从词中移除无障碍，因为其他通知按钮在小屏幕上不可见  -->
+    <string name="notification_action_stop_acc_service">停止服务</string>
+
+    <string name="notification_keyboard_hidden_title">键盘已隐藏！</string>
+    <string name="notification_keyboard_hidden_text">点击\'显示键盘\'重新开始显示键盘。</string>
+
+    <string name="notification_toggle_keyboard_title">切换 Key Mapper 输入法</string>
+    <string name="notification_toggle_keyboard_text">点击\'切换\'来切换 Key Mapper 输入法。</string>
+    <string name="notification_toggle_keyboard_action">切换</string>
+
+    <string name="notification_migrate_screen_off_key_map_title">您的屏幕关闭按键映射需要注意！</string>
+    <string name="notification_migrate_screen_off_key_map_text">我们对造成的不便表示歉意，但您需要重新录制您的屏幕关闭按键映射。</string>
+    <!-- 通知字符串 -->
+
+    <!--偏好设置标题和摘要-->
+    <string name="title_pref_long_press_delay">默认长按延迟</string>
+    <string name="summary_pref_long_press_delay">按键应按下多长时间才能被检测为长按。默认为 500 毫秒。可在按键映射的选项中覆盖。</string>
+
+    <string name="title_pref_double_press_delay">默认双击持续时间</string>
+    <string name="summary_pref_double_press_delay">按键必须多快被双击才能被检测为双击。默认为 300 毫秒。可在按键映射的选项中覆盖。</string>
+
+    <string name="summary_pref_vibration_duration">如果为按键映射启用了振动，则振动多长时间。默认为 200 毫秒。可在按键映射的选项中覆盖。</string>
+    <string name="title_pref_vibration_duration">默认振动持续时间</string>
+
+    <string name="summary_pref_repeat_delay">触发器需要按住多长时间动作才开始重复。默认为 400 毫秒。可在按键映射的选项中覆盖。</string>
+    <string name="title_pref_repeat_delay">默认重复开始前的延迟</string>
+
+    <string name="summary_pref_repeat_rate">每次动作重复之间的延迟。默认为 50 毫秒。可在按键映射的选项中覆盖。</string>
+    <string name="title_pref_repeat_rate">默认重复间隔</string>
+
+    <string name="summary_pref_sequence_trigger_timeout">完成序列触发器允许的时间。默认为 1000 毫秒。可在按键映射的选项中覆盖。</string>
+    <string name="title_pref_sequence_trigger_timeout">默认序列触发器超时</string>
+
+    <string name="title_pref_reset_defaults">重置</string>
+
+    <string name="title_pref_force_vibrate">使所有按键映射振动</string>
+    <string name="summary_pref_force_vibrate">每次触发按键映射时</string>
+
+    <string name="title_pref_show_toggle_keymaps_notification">显示暂停/恢复通知</string>
+    <string name="summary_pref_show_toggle_keymaps_notification">切换按键映射的开启和关闭</string>
+
+    <string name="title_pref_automatic_backup_location_enabled">更改自动备份位置</string>
+    <string name="title_pref_automatic_backup_location_disabled">开启自动备份</string>
+    <string name="summary_pref_automatic_backup_location_disabled">定期备份您的按键映射</string>
+
+    <string name="title_pref_auto_change_ime_on_connection">当设备（例如键盘）连接/断开连接时自动更改屏幕键盘</string>
+    <string name="summary_pref_auto_change_ime_on_connection">当所选设备连接时，将自动选择 Key Mapper 输入法。当设备断开连接时，将自动选择您的正常键盘。</string>
+
+    <string name="title_pref_auto_change_ime_on_input_focus">当您开始输入文本时自动更改屏幕键盘</string>
+    <string name="summary_pref_auto_change_ime_on_input_focus">当您尝试打开键盘时，将自动选择最后使用的正常屏幕键盘。当您停止使用键盘时，将自动选择 Key Mapper 输入法。</string>
+
+    <string name="title_pref_show_toast_when_auto_changing_ime">屏幕消息</string>
+    <string name="summary_pref_show_toast_when_auto_changing_ime">自动更改键盘时显示</string>
+
+    <string name="title_pref_root_permission">请求 Root 权限</string>
+    <string name="summary_pref_root_permission">如果您的设备已 Root，这将显示来自 Magisk 或您的 Root 应用的 Root 权限弹出窗口。</string>
+
+    <string name="title_pref_dark_theme">选择主题</string>
+    <string name="summary_pref_dark_theme">提供浅色和深色主题</string>
+
+    <string name="summary_pref_show_toggle_keyboard_notification">当您点击通知时，在 Key Mapper 输入法和您的正常键盘之间切换。</string>
+    <string name="title_pref_show_toggle_keyboard_notification">切换 Key Mapper 输入法通知</string>
+
+    <string name="title_pref_toggle_keyboard_on_toggle_keymaps">切换按键映射时自动更改键盘</string>
+    <string name="summary_pref_toggle_keyboard_on_toggle_keymaps">当您恢复按键映射时自动选择 Key Mapper 输入法，暂停时选择您的默认键盘。</string>
+
+    <string name="title_pref_hide_home_screen_alerts">隐藏主屏幕警报</string>
+    <string name="summary_pref_hide_home_screen_alerts">隐藏主屏幕顶部的警报</string>
+
+    <string name="title_pref_show_device_descriptors">显示设备 ID</string>
+    <string name="summary_pref_show_device_descriptors">区分同名设备</string>
+
+    <string name="title_pref_toggle_logging">启用额外日志记录</string>
+    <string name="summary_pref_toggle_logging">记录更详细的日志</string>
+    <string name="title_pref_view_and_share_log">查看 Key Mapper 日志</string>
+    <string name="summary_pref_view_and_share_log">如果您遇到问题，请与开发者分享此内容</string>
+
+    <string name="title_pref_share_logcat">分享 logcat</string>
+    <string name="summary_pref_share_logcat">分享整个系统日志</string>
+    <string name="dialog_title_share_logcat_error">分享 logcat 失败</string>
+
+    <string name="title_pref_report_issue">报告问题</string>
+
+    <string name="title_pref_delete_sound_files">删除声音文件</string>
+    <string name="summary_pref_delete_sound_files">删除可用于声音动作的声音文件。</string>
+
+    <string name="title_pref_grant_write_secure_settings_not_granted">授予权限</string>
+    <string name="title_pref_grant_write_secure_settings_granted">权限已授予</string>
+
+    <string name="title_pref_grant_shizuku_install_app_not_installed">1. Shizuku 未安装！点击下载 Shizuku 应用。</string>
+    <string name="title_pref_grant_shizuku_install_app_installed">1. Shizuku 已安装。</string>
+
+    <string name="title_pref_grant_shizuku_not_started">2. Shizuku 未启动！点击打开 Shizuku 应用，然后阅读他们的说明，了解如何启动它。</string>
+    <string name="title_pref_grant_shizuku_started">2. Shizuku 已启动。</string>
+
+    <string name="title_pref_grant_shizuku_not_granted">3. Key Mapper 没有使用 Shizuku 的权限。点击授予此权限。</string>
+    <string name="title_pref_grant_shizuku_granted">3. Key Mapper 将自动使用 Shizuku。点击阅读哪些 Key Mapper 功能使用 Shizuku。</string>
+
+    <string name="title_pref_default_options">更改默认选项</string>
+    <string name="summary_pref_default_options">用于触发器和动作</string>
+
+    <string name="title_pref_reset_settings">重置所有</string>
+    <string name="dialog_title_reset_settings">危险！</string>
+    <string name="dialog_message_reset_settings">您确定要将应用中的所有设置重置为默认值吗？您现有的按键映射不会受到影响。介绍和警告弹出窗口将再次显示。</string>
+    <string name="pos_button_reset_settings">是的，重置</string>
+
+    <string name="settings_reset_app_bar_button">重置所有</string>
+    <string name="settings_section_customize_experience_title">定制您的体验</string>
+    <string name="settings_section_key_maps_title">按键映射</string>
+    <string name="settings_section_data_management_title">数据管理</string>
+    <string name="settings_section_power_user_title">高级用户选项</string>
+    <string name="settings_section_debugging_title">调试</string>
+    <string name="settings_section_notifications">通知</string>
+
+    <!--偏好设置标题和摘要-->
+
+    <!--偏好设置类别-->
+    <string name="title_pref_category_root">Root 设置</string>
+    <string name="summary_pref_category_root">这些选项仅适用于已 Root 的设备！如果您不知道什么是 Root 或您的设备是否已 Root，如果它们不起作用，请不要留下差评。:)</string>
+
+    <string name="title_pref_category_write_secure_settings">需要 WRITE_SECURE_SETTINGS 权限</string>
+    <string name="summary_pref_category_write_secure_settings">这些选项仅在 Key Mapper 具有 WRITE_SECURE_SETTINGS 权限时启用。点击下面的按钮了解如何授予该权限。</string>
+
+    <string name="title_pref_automatically_change_ime">自动切换键盘</string>
+    <string name="summary_pref_automatically_change_ime">在需要时切换然后切换回来</string>
+
+    <string name="title_pref_automatically_change_ime_choose_devices">选择设备</string>
+    <string name="summary_pref_automatically_change_ime_choose_devices">选择哪些设备触发自动键盘切换</string>
+
+    <string name="title_pref_category_log">日志记录</string>
+    <string name="summary_pref_category_log">这可能会给您的按键映射增加延迟，因此只有在尝试调试应用或应开发者要求时才开启此功能。</string>
+
+    <string name="title_pref_pro_mode">使用 PRO 模式</string>
+    <string name="summary_pref_pro_mode">高级按键事件检测及更多</string>
+
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_system">系统</string>
+    <!--偏好设置类别-->
+
+    <!--标志-->
+    <string name="flag_show_volume_dialog">显示音量对话框</string>
+    <string name="flag_vibrate">振动</string>
+    <string name="flag_show_toast">显示屏幕消息</string>
+    <string name="flag_long_press_double_vibration">长按时再次振动</string>
+
+    <string name="flag_repeat_build_description_start">重复</string>
+    <string name="flag_repeat_build_description_limit">%d 次</string>
+    <string name="flag_repeat_build_description_repeat_delay">%d 毫秒后开始</string>
+    <string name="flag_repeat_build_description_repeat_rate">每 %d 毫秒一次</string>
+    <string name="flag_repeat_build_description_until_pressed_again">直到再次按下</string>
+    <string name="flag_repeat_build_description_until_released">直到释放</string>
+
+    <string name="flag_repeat_actions">重复</string>
+
+    <string name="flag_hold_down">按住</string>
+    <string name="flag_hold_down_until_pressed_again">按住直到再次按下</string>
+    <string name="flag_dont_override_default_action">不重映射</string>
+    <string name="flag_trigger_from_other_apps">允许其他应用通过 Intent 或快捷方式控制此按键映射</string>
+    <string name="flag_trigger_from_other_apps_copy_uid">复制按键映射 ID</string>
+    <string name="flag_detect_from_input_method">⌨</string>
+    <!--标志-->
+
+    <!-- 系统动作选项 -->
+    <string name="stream_accessibility">无障碍</string>
+    <string name="stream_alarm">闹钟</string>
+    <string name="stream_dtmf">DTMF</string>
+    <string name="stream_music">音乐</string>
+    <string name="stream_notification">通知</string>
+    <string name="stream_ring">铃声</string>
+    <string name="stream_system">系统</string>
+    <string name="stream_voice_call">语音通话</string>
+
+    <string name="ringer_mode_normal">正常</string>
+    <string name="ringer_mode_vibrate">振动</string>
+    <string name="ringer_mode_silent">静音</string>
+
+    <string name="lens_front">前置</string>
+    <string name="lens_back">后置</string>
+
+    <string name="dnd_mode_alarms">仅警报</string>
+    <string name="dnd_mode_priority">优先级</string>
+    <string name="dnd_mode_none">完全静音</string>
+    <!-- 系统动作选项 -->
+
+    <!-- 快捷设置磁贴 -->
+    <string name="tile_pause_title">暂停按键映射</string>
+    <string name="tile_resume_title">恢复按键映射</string>
+    <string name="tile_paused_subtitle">已暂停</string>
+    <string name="tile_running_subtitle">运行中</string>
+    <string name="tile_service_disabled">服务已禁用</string>
+    <string name="tile_accessibility_service_disabled_content_description">Key Mapper 无障碍服务已禁用</string>
+    <string name="tile_toggle_keymapper_keyboard">切换 Key Mapper 输入法</string>
+    <!-- 快捷设置磁贴 -->
+
+    <!-- 元状态 -->
+    <string name="meta_state_ctrl">Ctrl</string>
+    <string name="meta_state_ctrl_left">左 Ctrl</string>
+    <string name="meta_state_ctrl_right">右 Ctrl</string>
+
+    <string name="meta_state_alt">Alt</string>
+    <string name="meta_state_alt_left">左 Alt</string>
+    <string name="meta_state_alt_right">右 Alt</string>
+
+    <string name="meta_state_shift">Shift</string>
+    <string name="meta_state_shift_left">左 Shift</string>
+    <string name="meta_state_shift_right">右 Shift</string>
+
+    <string name="meta_state_meta">Meta</string>
+    <string name="meta_state_meta_left">左 Meta</string>
+    <string name="meta_state_meta_right">右 Meta</string>
+
+    <string name="meta_state_sym">Sym</string>
+    <string name="meta_state_function">Func</string>
+    <string name="meta_state_caps_lock">大写锁定</string>
+    <string name="meta_state_num_lock">数字锁定</string>
+    <string name="meta_state_scroll_lock">滚动锁定</string>
+    <!-- 元状态 -->
+
+    <!-- 错误消息 -->
+    <string name="error_ime_must_be_chosen">您必须使用 Key Mapper 输入法，此动作才能工作！</string>
+
+    <string name="error_app_isnt_installed">包名为 %s 的应用未安装！</string>
+
+    <string name="error_app_is_disabled_package_name">应用 %s 已被禁用！</string>
+    <string name="error_action_requires_write_settings_permission">您需要授予 Key Mapper 修改系统设置的权限。</string>
+    <string name="error_requires_root">这需要 Root 权限！</string>
+    <string name="error_action_requires_camera_permission">此动作需要相机权限！</string>
+    <string name="error_sdk_version_too_low">需要 Android %s 或更新版本</string>
+    <string name="error_sdk_version_too_high">需要 Android %s 或更旧版本</string>
+    <string name="error_system_feature_camera_unsupported">您的设备没有相机。</string>
+    <string name="error_system_feature_nfc_unsupported">您的设备不支持 NFC。</string>
+    <string name="error_system_feature_fingerprint_unsupported">您的设备没有指纹读取器。</string>
+    <string name="error_system_feature_wifi_unsupported">您的设备不支持 WiFi。</string>
+    <string name="error_system_feature_bluetooth_unsupported">您的设备不支持蓝牙。</string>
+    <string name="error_system_feature_device_admin_unsupported">您的设备不支持设备策略实施。</string>
+    <string name="error_system_feature_camera_flash_unsupported">您的设备没有相机闪光灯。</string>
+    <string name="error_system_feature_telephony_unsupported">您的设备无法使用电话功能。是否插入了 SIM 卡？</string>
+    <string name="error_cant_find_ime_settings">找不到键盘设置页面！</string>
+    <string name="error_need_to_enable_device_admin">Key Mapper 需要成为设备管理员！</string>
+    <string name="error_keymapper_doesnt_have_permission_app_shortcut">Key Mapper 没有使用该快捷方式的权限</string>
+    <string name="error_action_notification_policy_permission">应用需要权限来更改\"请勿打扰\"状态！</string>
+    <string name="error_action_requires_read_phone_state_permission">此动作需要读取手机状态的权限！</string>
+    <string name="error_cant_find_write_settings_page">找不到 WRITE_SETTINGS 权限页面！</string>
+    <string name="error_opening_app_shortcut">打开此应用快捷方式时出错</string>
+    <string name="error_cant_find_dnd_access_settings">找不到\"请勿打扰\"访问权限设置！</string>
+    <string name="error_need_write_secure_settings_permission">Key Mapper 需要 WRITE_SECURE_SETTINGS 权限。</string>
+    <string name="error_no_app_to_phone_call">没有应用可以拨打此电话</string>
+    <string name="error_no_app_to_send_sms">没有应用可以发送此短信</string>
+
+    <string name="error_camera_in_use">相机正在使用中！</string>
+    <string name="error_camera_disconnected">相机连接已断开！</string>
+    <string name="error_camera_disabled">相机已被禁用！</string>
+    <string name="error_camera_error">相机错误！</string>
+    <string name="error_max_cameras_in_use">已达到相机最大使用数量！</string>
+    <string name="error_front_flash_not_found">无前置闪光灯</string>
+    <string name="error_back_flash_not_found">无后置闪光灯</string>
+    <string name="error_variable_flashlight_strength_unsupported">不支持可变手电筒强度</string>
+
+    <string name="error_accessibility_service_disabled">需要启用无障碍服务！</string>
+    <string name="error_accessibility_service_crashed">需要重启无障碍服务！</string>
+    <string name="error_launcher_shortcuts_not_supported">您的启动器不支持快捷方式。</string>
+
+    <string name="error_key_mapper_ime_service_disabled">需要启用 Key Mapper 输入法！</string>
+    <string name="error_ime_not_found">找不到 %s 输入法</string>
+    <string name="error_cant_show_ime_picker_in_background">无法显示输入法选择器！</string>
+    <string name="error_failed_to_find_accessibility_node">找不到无障碍节点！</string>
+    <string name="error_failed_to_perform_accessibility_global_action">执行全局动作 %s 失败！</string>
+    <string name="error_fix_key_event_action">此动作需要设置</string>
+
+    <string name="error_battery_optimisation_activity_not_found">未找到电池优化设置！如果存在，请手动打开。</string>
+
+    <string name="error_extra_not_found">附加数据 (%s) 未找到！</string>
+    <string name="error_duplicate_constraint">不能有重复的约束条件！</string>
+    <string name="error_cant_be_empty">不能为空！</string>
+    <string name="error_device_not_found">设备未找到！</string>
+    <string name="error_empty_json">空的 JSON 文件！</string>
+    <string name="error_file_access_denied">文件访问被拒绝！%s</string>
+    <string name="error_io_error">未知 IO 错误！</string>
+    <string name="error_file_operation_cancelled">已取消！</string>
+    <string name="error_invalid_number">无效数字！</string>
+    <string name="error_number_too_small">必须至少为 %s！</string>
+    <string name="error_number_too_big">必须至多为 %s！</string>
+    <string name="error_battery_optimisation_enabled">电池优化已开启！请关闭此功能，因为它会随机导致 Key Mapper 停止工作。</string>
+    <string name="error_denied_notification_listener_service_permission">拒绝通知访问权限！</string>
+    <string name="error_invalid_intent_extra_value">无效！</string>
+    <string name="error_denied_call_phone_permission">拒绝拨打电话的权限！</string>
+    <string name="error_denied_send_sms_permission">拒绝发送短信的权限！</string>
+    <string name="error_sms_generic_failure">发送短信失败。号码正确吗？</string>
+    <string name="error_sms_radio_off">无法发送短信。请关闭飞行模式。</string>
+    <string name="error_sms_no_service">无法发送短信。无蜂窝网络服务。</string>
+    <string name="error_sms_limit_exceeded">短信发送次数超限。请稍后再试。</string>
+    <string name="error_sms_network_reject">网络拒绝了短信。</string>
+    <string name="error_sms_no_memory">无法发送短信。设备内存不足。</string>
+    <string name="error_sms_invalid_format">无效的短信消息格式。</string>
+    <string name="error_sms_network_error">无法发送短信。网络错误。</string>
+    <string name="error_sms_blocked_during_emergency">紧急呼叫期间无法发送短信。</string>
+    <string name="error_sms_no_sim">无法发送短信。未检测到 SIM 卡。</string>
+    <string name="error_backup_version_too_new">您需要将 Key Mapper 更新到最新版本才能使用此备份。</string>
+    <string name="error_voice_assistant_not_found">未安装语音助手！</string>
+    <string name="error_insufficient_permissions">权限不足</string>
+    <string name="error_no_incompatible_input_methods_installed">您没有安装任何屏幕键盘！</string>
+    <string name="error_no_media_sessions">没有应用在播放媒体！</string>
+    <string name="error_source_file_not_found">源文件未找到！%s</string>
+    <string name="error_target_file_not_found">目标文件未找到！%s</string>
+    <string name="error_failed_to_dispatch_gesture">输入手势失败！</string>
+    <string name="error_failed_to_modify_system_setting">修改系统设置 %s 失败！</string>
+    <string name="error_ime_disabled">您需要启用 %s！</string>
+    <string name="error_failed_to_change_ime">更改输入法失败！</string>
+    <string name="error_failed_to_enable_ime">启用输入法失败！</string>
+    <string name="error_no_camera_app">您的设备没有相机应用！</string>
+    <string name="error_no_device_assistant">您的设备没有助手！</string>
+    <string name="error_no_settings_app">您的设备没有设置应用！</string>
+    <string name="error_no_app_to_open_url">没有应用可以打开此网址！</string>
+    <string name="error_not_a_directory">不是文件夹！%s</string>
+    <string name="error_not_a_file">不是文件！%s</string>
+    <string name="error_directory_not_found">目录未找到！%s</string>
+    <string name="error_cant_find_sound_file">找不到声音文件！</string>
+    <string name="error_storage_permission_denied">存储权限被拒绝！</string>
+    <string name="error_matching_source_and_target_paths">源和目标不能相同！</string>
+    <string name="error_no_space_left_at_target">目标位置空间不足！%s</string>
+    <string name="error_shizuku_permission_denied">Shizuku 权限被拒绝！</string>
+    <string name="error_shizuku_not_started">Shizuku 未启动！</string>
+    <string name="error_no_file_name">此文件没有名称！</string>
+    <string name="error_invalid_backup">无效文件。必须是从 Key Mapper 导出的 zip 文件。</string>
+    <string name="error_choose_bluetooth_devices_permission_denied">您必须授予 Key Mapper 查看已配对蓝牙设备的权限。</string>
+    <string name="error_malformed_url">格式错误的 URL。您是否忘记了 http://？</string>
+
+    <string name="error_access_fine_location_permission_denied">拒绝读取精确位置的权限！</string>
+    <string name="error_answer_end_phone_call_permission_denied">拒绝接听和结束电话的权限！</string>
+    <string name="error_find_nearby_devices_permission_denied">拒绝查看已配对蓝牙设备的权限！</string>
+    <string name="error_notifications_permission_denied">拒绝显示通知的权限！</string>
+    <string name="error_read_logs_permission_denied">拒绝读取日志的权限！</string>
+    <string name="error_pinch_screen_must_be_two_or_more_fingers">必须为 2 根或更多！</string>
+    <string name="error_pinch_screen_must_be_ten_or_less_fingers">必须为 %d 根或更少！</string>
+    <string name="error_pinch_screen_duration_must_be_more_than_zero">必须大于 0！</string>
+    <string name="error_pinch_screen_distance_too_low">必须大于 0！</string>
+    <string name="error_swipe_screen_fingercount_must_be_more_than_zero">必须大于 0！</string>
+    <string name="error_swipe_screen_duration_must_be_more_than_zero">必须大于 0！</string>
+    <string name="error_swipe_screen_must_be_ten_or_less_fingers">必须为 %d 根或更少！</string>
+
+    <string name="error_ui_element_not_found">未找到 UI 元素！</string>
+    <string name="error_shell_command_timeout">命令在 %1$d 秒后超时</string>
+    <string name="error_system_bridge_disconnected">需要启动 PRO 模式</string>
+    <string name="error_sms_rate_limit">达到速率限制。您每秒只能发送一次。</string>
+    <!-- 错误消息 -->
+
+    <!-- 动作标签 -->
+    <string name="action_toggle_wifi">切换 WiFi</string>
+    <string name="action_enable_wifi">启用 WiFi</string>
+    <string name="action_disable_wifi">禁用 WiFi</string>
+
+    <string name="action_toggle_bluetooth">切换蓝牙</string>
+    <string name="action_enable_bluetooth">启用蓝牙</string>
+    <string name="action_disable_bluetooth">禁用蓝牙</string>
+
+    <string name="action_volume_up">音量加大</string>
+    <string name="action_volume_down">音量减小</string>
+    <string name="action_volume_mute">静音</string>
+    <string name="action_toggle_mute">切换静音</string>
+    <string name="action_volume_unmute">取消静音</string>
+    <string name="action_mute_microphone">静音麦克风</string>
+    <string name="action_unmute_microphone">取消麦克风静音</string>
+    <string name="action_toggle_mute_microphone">切换麦克风静音</string>
+    <string name="action_volume_show_dialog">显示音量对话框</string>
+    <string name="action_increase_stream">增大音量流</string>
+    <string name="action_increase_stream_formatted">增大 %s 音量流</string>
+    <string name="action_decrease_stream">减小音量流</string>
+    <string name="action_decrease_stream_formatted">减小 %s 音量流</string>
+    <string name="action_cycle_ringer_mode">循环响铃模式 (正常, 振动, 静音)</string>
+    <string name="action_cycle_vibrate_ring">循环响铃模式 (正常, 振动)</string>
+    <string name="action_change_ringer_mode">更改响铃模式</string>
+    <string name="action_change_ringer_mode_formatted">更改为 %s 模式</string>
+    <string name="action_toggle_dnd_mode">切换\"请勿打扰\"模式</string>
+    <string name="action_toggle_dnd_mode_formatted">切换仅 %s 的\"请勿打扰\"模式</string>
+    <string name="action_enable_dnd_mode">启用\"请勿打扰\"模式</string>
+    <string name="action_enable_dnd_mode_formatted">启用仅 %s 的\"请勿打扰\"模式</string>
+    <string name="action_disable_dnd_mode">禁用\"请勿打扰\"模式</string>
+
+    <string name="action_enable_auto_rotate">启用自动旋转</string>
+    <string name="action_disable_auto_rotate">禁用自动旋转</string>
+    <string name="action_toggle_auto_rotate">切换自动旋转</string>
+    <string name="action_portrait_mode">竖屏模式</string>
+    <string name="action_landscape_mode">横屏模式</string>
+    <string name="action_switch_orientation">切换方向</string>
+    <string name="action_cycle_rotations">循环旋转</string>
+    <string name="action_cycle_rotations_formatted">循环 %s 旋转</string>
+
+    <string name="action_toggle_mobile_data">切换移动数据</string>
+    <string name="action_enable_mobile_data">启用移动数据</string>
+    <string name="action_disable_mobile_data">禁用移动数据</string>
+
+    <string name="action_toggle_auto_brightness">切换自动亮度</string>
+    <string name="action_disable_auto_brightness">禁用自动亮度</string>
+    <string name="action_enable_auto_brightness">启用自动亮度</string>
+    <string name="action_increase_brightness">增加显示亮度</string>
+    <string name="action_decrease_brightness">降低显示亮度</string>
+
+    <string name="action_expand_notification_drawer">展开通知栏</string>
+    <string name="action_toggle_notification_drawer">切换通知栏</string>
+    <string name="action_expand_quick_settings">展开快速设置</string>
+    <string name="action_toggle_quick_settings">切换快速设置面板</string>
+    <string name="action_collapse_status_bar">收起状态栏</string>
+
+    <string name="action_pause_media">暂停媒体播放</string>
+    <string name="action_pause_media_package">暂停某个应用的媒体播放</string>
+    <string name="action_pause_media_package_formatted">暂停 %s 的媒体</string>
+
+    <string name="action_play_media">恢复媒体播放</string>
+    <string name="action_play_media_package">恢复某个应用的媒体播放</string>
+    <string name="action_play_media_package_formatted">恢复 %s 的媒体</string>
+
+    <string name="action_play_pause_media">播放/暂停媒体播放</string>
+    <string name="action_play_pause_media_package">播放/暂停某个应用的媒体播放</string>
+    <string name="action_play_pause_media_package_formatted">播放/暂停 %s 的媒体</string>
+
+    <string name="action_next_track">下一曲</string>
+    <string name="action_next_track_package">某个应用的下一曲</string>
+    <string name="action_next_track_package_formatted">%s 的下一曲</string>
+
+    <string name="action_previous_track">上一曲</string>
+    <string name="action_previous_track_package">某个应用的上一曲</string>
+    <string name="action_previous_track_package_formatted">%s 的上一曲</string>
+
+    <string name="action_fast_forward">快进</string>
+    <string name="action_fast_forward_package">某个应用的快进</string>
+    <string name="action_fast_forward_package_formatted">%s 的快进</string>
+    <string name="action_fast_forward_message">并非所有媒体应用都支持快进。例如 Google Play Music。</string>
+
+    <string name="action_rewind">快退</string>
+    <string name="action_rewind_package">某个应用的快退</string>
+    <string name="action_rewind_package_formatted">%s 的快退</string>
+    <string name="action_rewind_message">并非所有媒体应用都支持快退。例如 Google Play Music。</string>
+
+    <string name="action_stop_media">停止媒体</string>
+    <string name="action_stop_media_package">停止某个应用的媒体</string>
+    <string name="action_stop_media_package_formatted">停止 %s 的媒体</string>
+
+    <string name="action_step_forward_media">媒体步进向前</string>
+    <string name="action_step_forward_media_package">某个应用的媒体步进向前</string>
+    <string name="action_step_forward_media_package_formatted">%s 的媒体步进向前</string>
+
+    <string name="action_step_backward_media">媒体步进向后</string>
+    <string name="action_step_backward_media_package">某个应用的媒体步进向后</string>
+    <string name="action_step_backward_media_package_formatted">%s 的媒体步进向后</string>
+
+    <string name="action_go_back">返回</string>
+    <string name="action_go_home">返回主屏幕</string>
+    <string name="action_open_recents">打开最近任务</string>
+    <string name="action_open_menu">打开菜单</string>
+    <string name="action_toggle_split_screen">切换分屏</string>
+    <string name="action_go_last_app">切换到上一个应用 (双击最近任务键)</string>
+
+    <string name="action_toggle_flashlight">切换手电筒</string>
+    <string name="action_enable_flashlight">开启手电筒 </string>
+    <string name="action_disable_flashlight">关闭手电筒</string>
+
+    <string name="action_toggle_flashlight_formatted">切换手电筒</string>
+    <string name="action_toggle_flashlight_with_strength">切换手电筒 (%s)</string>
+    <string name="action_enable_flashlight_formatted">开启手电筒</string>
+    <string name="action_enable_flashlight_with_strength">开启手电筒 (%s)</string>
+    <string name="action_disable_flashlight_formatted">关闭手电筒</string>
+    <string name="action_flashlight_change_strength">更改手电筒亮度</string>
+    <string name="action_flashlight_increase_strength_formatted">调亮手电筒 %s</string>
+    <string name="action_flashlight_decrease_strength_formatted">调暗手电筒 %s</string>
+
+    <string name="action_toggle_front_flashlight_formatted">切换前置手电筒</string>
+    <string name="action_toggle_front_flashlight_with_strength">切换前置手电筒 (%s)</string>
+    <string name="action_enable_front_flashlight_formatted">开启前置手电筒</string>
+    <string name="action_enable_front_flashlight_with_strength">开启前置手电筒 (%s)</string>
+    <string name="action_disable_front_flashlight_formatted">关闭前置手电筒</string>
+    <string name="action_front_flashlight_change_strength">更改前置手电筒亮度</string>
+    <string name="action_front_flashlight_increase_strength_formatted">调亮前置手电筒 %s</string>
+    <string name="action_front_flashlight_decrease_strength_formatted">调暗前置手电筒 %s</string>
+
+    <string name="action_nfc_enable">启用 NFC</string>
+    <string name="action_nfc_disable">禁用 NFC</string>
+    <string name="action_nfc_toggle">切换 NFC</string>
+
+    <string name="action_screenshot">截屏</string>
+    <string name="action_open_assistant">启动语音助手</string>
+    <string name="action_open_device_assistant">启动设备助手</string>
+    <string name="action_open_camera">打开相机</string>
+
+    <string name="action_lock_device">锁定设备</string>
+
+    <string name="action_secure_lock_device">安全锁定设备</string>
+    <string name="action_secure_lock_device_message">您将只能使用 PIN 码重新登录。指纹扫描仪和人脸解锁将被禁用。这是在 Android Pie 9.0 之前锁定非 Root 设备的唯一可靠方法。</string>
+
+    <string name="action_power_on_off_device">休眠/唤醒设备</string>
+
+    <string name="action_consume_keyevent">不执行任何操作</string>
+
+    <string name="action_move_cursor">移动光标</string>
+    <string name="action_move_cursor_prev_character">移动到上一个字符</string>
+    <string name="action_move_cursor_next_character">移动到下一个字符</string>
+    <string name="action_move_cursor_start_word">移动到上一个单词</string>
+    <string name="action_move_cursor_end_word">移动到下一个单词</string>
+    <string name="action_move_cursor_start_line">移动到上一行</string>
+    <string name="action_move_cursor_end_line">移动到下一行</string>
+    <string name="action_move_cursor_start_paragraph">移动到段落开头</string>
+    <string name="action_move_cursor_end_paragraph">移动到段落末尾</string>
+    <string name="action_move_cursor_start_page">移动到页面开头</string>
+    <string name="action_move_cursor_end_page">移动到页面末尾</string>
+
+
+    <string name="action_toggle_keyboard">切换键盘</string>
+    <string name="action_toggle_keyboard_message">此操作仅在您点击了应该显示键盘的输入字段时才有效。</string>
+    <string name="action_show_keyboard">显示键盘</string>
+    <string name="action_hide_keyboard">隐藏键盘</string>
+
+    <string name="action_show_keyboard_picker">显示键盘选择器</string>
+
+    <string name="action_switch_keyboard">切换键盘</string>
+    <string name="action_switch_keyboard_formatted">切换到 %s</string>
+
+    <string name="action_text_cut">剪切</string>
+    <string name="action_text_copy">复制</string>
+    <string name="action_text_paste">粘贴</string>
+    <string name="action_select_word_at_cursor">选择光标处的单词</string>
+
+    <string name="action_open_settings">打开设置</string>
+    <string name="action_show_power_menu">显示电源菜单</string>
+
+    <string name="action_toggle_airplane_mode">切换飞行模式</string>
+    <string name="action_enable_airplane_mode">启用飞行模式</string>
+    <string name="action_disable_airplane_mode">禁用飞行模式</string>
+
+    <string name="action_open_app">启动应用</string>
+    <string name="action_open_app_dialog_message">某些设备要求应用获得权限才能在后台启动应用。点击\"了解更多\"查看我们网站上的说明。</string>
+    <string name="action_open_app_dialog_read_more_button">了解更多</string>
+    <string name="action_open_app_dialog_ignore_button">忽略</string>
+
+    <string name="action_open_app_dialog_title">警告！</string>
+    <string name="action_open_app_shortcut">启动应用快捷方式</string>
+    <string name="action_input_key_code">输入键码</string>
+    <string name="action_input_key_event">输入按键事件</string>
+
+    <string name="action_tap_screen">点击屏幕</string>
+    <string name="action_swipe_screen">滑动屏幕</string>
+    <string name="action_pinch_screen">捏合屏幕</string>
+    <string name="action_input_text">输入文本</string>
+    <string name="action_open_url">打开网址</string>
+    <string name="action_send_intent">发送 Intent</string>
+    <string name="action_phone_call">拨打电话</string>
+    <string name="action_answer_call">接听电话</string>
+    <string name="action_end_call">结束通话</string>
+    <string name="action_send_sms">发送短信</string>
+    <string name="action_send_sms_description">发送短信: \"%s\" 至 %s</string>
+    <string name="action_compose_sms">编写短信</string>
+    <string name="action_compose_sms_description">编写短信: \"%s\" 至 %s</string>
+    <string name="action_play_sound">播放声音</string>
+    <string name="action_dismiss_most_recent_notification">清除最近的通知</string>
+    <string name="action_dismiss_all_notifications">清除所有通知</string>
+    <string name="action_device_controls">设备控制屏幕</string>
+    <string name="action_http_request">HTTP 请求</string>
+    <string name="action_http_request_method_label">HTTP 方法</string>
+    <string name="action_http_request_description_label">描述</string>
+    <string name="action_http_request_description_empty_error">不能为空！</string>
+    <string name="action_http_request_url_label">URL</string>
+    <string name="action_http_request_url_empty_error">不能为空！</string>
+    <string name="action_http_request_malformed_url_error">格式错误的 URL。您是否忘记了 http://？</string>
+    <string name="action_http_request_body_label">请求体 (可选)</string>
+    <string name="action_http_request_authorization_label">Authorization 请求头 (可选)</string>
+    <string name="action_http_request_authorization_supporting_text">如有必要，您必须添加 \'Bearer\' 前缀</string>
+
+    <string name="action_shell_command">Shell 命令</string>
+    <string name="action_shell_command_title">Shell 命令动作</string>
+    <string name="action_shell_command_command_label">脚本</string>
+    <string name="action_shell_command_command_empty_error">脚本不能为空！</string>
+    <string name="action_shell_command_use_root_label">以 Root 权限运行</string>
+    <string name="action_shell_command_execution_mode_standard">标准</string>
+    <string name="action_shell_command_execution_mode_root">Root</string>
+    <string name="action_shell_command_execution_mode_adb">ADB</string>
+    <string name="action_shell_command_execution_mode_label">执行模式</string>
+    <string name="action_shell_command_adb_streaming_warning">ADB 模式不支持流式输出</string>
+    <string name="action_shell_command_setup_pro_mode">设置 PRO 模式</string>
+    <string name="action_shell_command_setup_pro_mode_unsupported">设置 PRO 模式 (不支持)</string>
+    <string name="action_shell_command_tab_configuration">配置</string>
+    <string name="action_shell_command_tab_output">输出</string>
+    <string name="action_shell_command_no_output">尚无输出。点击测试以运行命令。</string>
+    <string name="action_shell_command_output_label">输出</string>
+    <string name="action_shell_command_test_button">测试</string>
+    <string name="action_shell_command_testing">执行中…</string>
+    <string name="action_shell_command_test_success">成功</string>
+    <string name="action_shell_command_test_failed">失败</string>
+    <string name="action_shell_command_exit_code">退出代码: %1$d</string>
+    <string name="action_shell_command_description_with_root">使用 Root 执行: %s</string>
+    <string name="action_shell_command_description_with_adb">使用 ADB 执行: %s</string>
+    <string name="action_shell_command_description_with_standard">执行: %s</string>
+
+    <string name="action_interact_ui_element_title">与应用元素交互</string>
+    <string name="action_interact_ui_element_description">Key Mapper 可以检测并与应用元素（如菜单、标签页、按钮和复选框）进行交互。您需要记录自己与应用交互的过程，以便 Key Mapper 知道您想做什么。</string>
+    <string name="action_interact_ui_element_start_recording">开始录制</string>
+    <string name="action_interact_ui_element_stop_recording">停止录制 (剩余 %s 分钟)</string>
+    <plurals name="action_interact_ui_element_elements_detected">
+        <item quantity="one">检测到 %d 个元素</item>
+        <item quantity="other">检测到 %d 个元素</item>
+    </plurals>
+    <string name="action_interact_ui_element_choose_app_title">选择要交互的应用</string>
+    <string name="action_interact_ui_element_record_again">重新录制</string>
+    <string name="action_interact_ui_element_choose_element_title">选择应用元素</string>
+    <string name="action_interact_ui_element_choose_element_text">选择您希望按键映射与之交互的元素。</string>
+    <string name="action_interact_ui_element_choose_element_not_found_subtitle">找不到您要找的内容？</string>
+    <string name="action_interact_ui_element_choose_element_not_found_text">并非所有应用都兼容。对于不兼容的应用，您可以尝试改用点击屏幕动作。</string>
+    <string name="action_interact_ui_element_interaction_type_dropdown">可能的交互方式</string>
+    <string name="action_interact_ui_element_interaction_type_dropdown_caption">选择您希望与 UI 元素交互的方式。</string>
+    <string name="action_interact_ui_element_filter_interaction_type_dropdown">筛选交互类型</string>
+    <string name="action_interact_ui_element_checkbox_additional_elements">显示更多元素</string>
+
+    <string name="action_interact_ui_element_interaction_type_any">任意</string>
+    <string name="action_interact_ui_element_interaction_type_click">点击</string>
+    <string name="action_interact_ui_element_interaction_type_long_click">长按</string>
+    <string name="action_interact_ui_element_interaction_type_focus">聚焦</string>
+    <string name="action_interact_ui_element_interaction_type_scroll_forward">向前滚动</string>
+    <string name="action_interact_ui_element_interaction_type_scroll_backward">向后滚动</string>
+    <string name="action_interact_ui_element_interaction_type_expand">展开</string>
+    <string name="action_interact_ui_element_interaction_type_collapse">折叠</string>
+    <string name="action_interact_ui_element_interaction_type_unknown">未知: %d</string>
+
+    <string name="action_interact_ui_element_interaction_details_title">交互详情</string>
+    <string name="action_interact_ui_element_description_label">描述</string>
+    <string name="action_interact_ui_element_app_label">应用</string>
+    <string name="action_interact_ui_element_text_label">文本/内容描述</string>
+    <string name="action_interact_ui_element_class_name_label">类名</string>
+    <string name="action_interact_ui_element_tooltip_label">工具提示/提示</string>
+    <string name="action_interact_ui_element_view_id_label">视图资源 ID</string>
+    <string name="action_interact_ui_element_unique_id_label">唯一 ID</string>
+    <string name="action_interact_ui_element_interaction_types_label">交互类型</string>
+
+    <string name="action_force_stop_app">强制停止应用</string>
+    <string name="action_clear_recent_app">关闭并从最近任务中清除应用</string>
+    <!-- 动作标签 -->
+
+    <!-- 动作类别标签 -->
+    <string name="action_cat_navigation">导航</string>
+    <string name="action_cat_volume">音量</string>
+    <string name="action_cat_media">媒体</string>
+    <string name="action_cat_keyboard">键盘</string>
+    <string name="action_cat_apps">应用</string>
+    <string name="action_cat_input">输入</string>
+    <string name="action_cat_flashlight">手电筒</string>
+    <string name="action_cat_connectivity">连接性</string>
+    <string name="action_cat_interface">界面</string>
+    <string name="action_cat_telephony">电话</string>
+    <string name="action_cat_display">显示</string>
+    <string name="action_cat_notifications">通知</string>
+    <string name="action_cat_special">特殊</string>
+    <!-- 动作类别标签 -->
+
+    <!--  Intent 动作类型字符串  -->
+    <string name="intent_type_bool_header">布尔值</string>
+    <string name="intent_type_bool_array_header">布尔值数组</string>
+    <string name="intent_type_int_header">整数</string>
+    <string name="intent_type_int_array_header">整数数组</string>
+    <string name="intent_type_string_header">字符串</string>
+    <string name="intent_type_string_array_header">字符串数组</string>
+    <string name="intent_type_long_header">长整型</string>
+    <string name="intent_type_long_array_header">长整型数组</string>
+    <string name="intent_type_byte_header">字节</string>
+    <string name="intent_type_byte_array_header">字节数组</string>
+    <string name="intent_type_double_header">双精度浮点数</string>
+    <string name="intent_type_double_array_header">双精度浮点数数组</string>
+    <string name="intent_type_char_header">字符</string>
+    <string name="intent_type_char_array_header">字符数组</string>
+    <string name="intent_type_float_header">浮点数</string>
+    <string name="intent_type_float_array_header">浮点数数组</string>
+    <string name="intent_type_short_header">短整型</string>
+    <string name="intent_type_short_array_header">短整型数组</string>
+
+    <string name="intent_type_bool_example">只能是 \"true\" 或 \"false\"</string>
+    <string name="intent_type_bool_array_example">一个以逗号分隔的 \"true\" 和 \"false\" 列表。例如 true,false,true</string>
+    <string name="intent_type_int_example">Java 编程语言中的有效整数。</string>
+    <string name="intent_type_int_array_example">一个以逗号分隔的 Java 编程语言中的有效整数列表。例如 100,399</string>
+    <string name="intent_categories_example">一个以逗号分隔的列表。例如 category1,category2</string>
+    <string name="intent_type_string_example">任意文本。</string>
+    <string name="intent_type_string_array_example">一个以逗号分隔的字符串列表。例如 string1,string2</string>
+    <string name="intent_type_long_example">Java 编程语言中的有效长整型。</string>
+    <string name="intent_type_long_array_example">一个以逗号分隔的 Java 编程语言中的有效长整型列表。例如 102302234234234,399083423234429</string>
+    <string name="intent_type_byte_example">Java 编程语言中的有效字节。</string>
+    <string name="intent_type_byte_array_example">一个以逗号分隔的 Java 编程语言中的有效字节列表。例如 123,3</string>
+    <string name="intent_type_double_example">Java 编程语言中的有效双精度浮点数。</string>
+    <string name="intent_type_double_array_example">一个以逗号分隔的 Java 编程语言中的有效双精度浮点数列表。例如 1.0,3.234</string>
+    <string name="intent_type_char_example">Java 编程语言中的有效字符。例如 \'a\' 或 \'b\'</string>
+    <string name="intent_type_char_array_example">一个以逗号分隔的 Java 编程语言中的有效字符列表。例如 a,b,c</string>
+    <string name="intent_type_float_example">Java 编程语言中的有效浮点数。例如 3.145</string>
+    <string name="intent_type_float_array_example">一个以逗号分隔的 Java 编程语言中的有效浮点数列表。例如 1241.123</string>
+    <string name="intent_type_short_example">Java 编程语言中的有效短整型。例如 2342</string>
+    <string name="intent_type_short_array_example">一个以逗号分隔的 Java 编程语言中的有效短整型列表。例如 3242,12354</string>
+
+    <string name="intent_flags_example">Intent 的标志存储为位标志。这些标志会改变 Intent 的处理方式。如果 Activity Intent 的此项为空，则 Key Mapper 将默认使用 FLAG_ACTIVITY_NEW_TASK。有关更多信息，请点击\'文档\'查看 Android 开发者文档。</string>
+    <!--  Intent 动作类型字符串  -->
+
+    <!--  关于  -->
+    <string name="about_link_github">GitHub</string>
+    <string name="about_link_website">网站</string>
+    <string name="about_link_translations">翻译</string>
+    <string name="about_version">版本 %s</string>
+    <string name="about_link_rate">评分</string>
+    <string name="about_link_changelog">更新日志</string>
+    <string name="about_link_discord">Discord</string>
+
+    <string name="about_header_boring_stuff">无聊的东西</string>
+    <string name="about_license_title">许可证</string>
+    <string name="about_license_subtitle">此应用的开源许可证。</string>
+
+    <string name="about_privacy_policy_title">隐私政策</string>
+    <string name="about_privacy_policy_subtitle">我们不收集任何个人信息，但这里有一份隐私政策说明这一点。</string>
+
+    <string name="about_header_our_team">我们的团队</string>
+
+    <string name="about_team_sds100_name" translatable="false">Seth Schroeder (sds100)</string>
+    <string name="about_team_sds100_role">开发者</string>
+    <string name="about_team_sds100_url" translatable="false">https://github.com/sds100</string>
+
+    <string name="about_team_jambl3r_name" translatable="false">Jack Ambler (jambl3r)</string>
+    <string name="about_team_jambl3r_role">用户体验设计师</string>
+    <string name="about_team_jambl3r_url" translatable="false">https://linkedin.com/in/jambl3r</string>
+
+    <string name="about_team_kekero_name" translatable="false">Katie (kekero)</string>
+    <string name="about_team_kekero_role">翻译 (波兰语)</string>
+    <string name="about_team_kekero_url" translatable="false">https://github.com/LoveEevee</string>
+
+    <string name="about_team_trollserver_name" translatable="false">HowToWhy</string>
+    <string name="about_team_trollserver_url" translatable="false">https://youtube.com/channel/UCljg1FH1B_ju2D_NfqAYjDw</string>
+    <string name="about_team_trollserver_role">翻译 (捷克语)</string>
+
+    <string name="about_team_bydario_name" translatable="false">Darío B. C. (bydariogamer)</string>
+    <string name="about_team_bydario_url" translatable="false">https://github.com/bydariogamer</string>
+    <string name="about_team_bydario_role">翻译 (西班牙语)</string>
+    <!--  关于  -->
+
+    <!-- 支持屏幕 -->
+    <string name="support_key_mapper_title">支持 Key Mapper ❤️</string>
+    <string name="support_key_mapper_subtitle">选择附加组件来升级您的体验</string>
+    <string name="support_key_mapper_sub_subtitle">您的支持让 Key Mapper 保持活力！</string>
+    <string name="support_key_mapper_quote">\"悬浮按钮功能改变了游戏规则\"</string>
+    <string name="support_key_mapper_quote_attribution">Google Play 评论者</string>
+    <string name="support_key_mapper_quote_1">悬浮按钮改变了游戏规则！</string>
+    <string name="support_key_mapper_quote_2">我一直在享受悬浮按钮功能。</string>
+    <string name="support_key_mapper_quote_3">悬浮按钮是一个绝妙的补充。</string>
+    <string name="support_key_mapper_quote_4">我手机体验中必不可少的一部分。</string>
+    <string name="pay_once_unlock_forever">一次付费，永久解锁</string>
+    <string name="watch_video_button">观看视频</string>
+    <string name="buy_now_button">立即购买 (%s)</string>
+    <string name="learn_more_button">了解更多</string>
+
+    <string name="on_screen_floating_buttons_title">屏幕悬浮按钮</string>
+    <string name="on_screen_floating_buttons_description">按钮不够用？在任何应用、游戏或锁屏上创建即时快捷方式和宏！</string>
+    <string name="feature_use_in_games">在游戏中使用</string>
+    <string name="feature_use_on_lock_screen">在锁屏上使用</string>
+
+    <string name="side_key_assistant_trigger_title">侧键 &amp; 助手触发器</string>
+    <string name="side_key_assistant_trigger_description">没用的侧键？将助手按钮或设备的侧键快捷方式重映射为您想要的任何功能！</string>
+    <string name="feature_screen_off">屏幕关闭</string>
+    <string name="feature_bixby">Bixby</string>
+    <string name="feature_gemini">Gemini</string>
+
+    <!-- 高级触发器 -->
+    <string name="assistant_activity_name">Key Mapper: 侧键</string>
+    <string name="assistant_any_trigger_name">任意助手</string>
+    <string name="assistant_device_trigger_name">侧键/电源键</string>
+    <string name="assistant_voice_trigger_name">语音助手</string>
+    <string name="trigger_error_assistant_not_purchased">您必须购买侧键触发器功能。</string>
+    <string name="trigger_error_floating_buttons_not_purchased">您必须购买悬浮按钮。</string>
+    <string name="trigger_error_floating_button_deleted">按钮已被删除。</string>
+    <string name="trigger_error_floating_button_deleted_title">悬浮按钮</string>
+    <string name="trigger_error_product_verification_failed">无法验证购买。您有网络连接吗？</string>
+
+    <!--  购买  -->
+    <string name="unlock_product_button">解锁 (%s)</string>
+    <string name="use_product_button">使用</string>
+    <string name="loading_product_button">加载中…</string>
+    <string name="purchased_product_label">已购买！</string>
+    <string name="retry_loading_price_button">重试获取价格</string>
+    <string name="purchasing_error_cancelled">购买已取消。</string>
+    <string name="purchasing_error_not_implemented">这需要一个付费功能，只能通过从 Google Play 下载 Key Mapper 来购买。</string>
+    <string name="purchasing_error_network">遇到网络错误。您有网络连接吗？</string>
+    <string name="purchasing_error_product_not_found">未找到此产品。</string>
+    <string name="purchasing_error_store_problem">Google Play 遇到错误。</string>
+    <string name="purchasing_error_payment_pending">我们正在等待 Google Play 确认您的购买成功。当您的卡成功扣款后，请重新打开 Key Mapper 应用。</string>
+    <string name="purchasing_error_purchase_invalid">无效购买。</string>
+    <string name="purchasing_pending_error_dialog_title">付款待处理</string>
+    <string name="purchasing_error_dialog_title">出了点问题 😕</string>
+    <string name="purchasing_error_dialog_button_retry">重试</string>
+    <string name="purchasing_contact_developer_button">联系开发者</string>
+    <string name="purchasing_error_assistant_not_purchased_home_screen">您必须购买侧键触发器功能！点击按键映射，然后通过点击\'高级触发器\'购买它。</string>
+    <string name="purchasing_error_floating_buttons_not_purchased_home_screen">您必须购买悬浮按钮功能！点击按键映射，然后通过点击\'高级触发器\'购买它。</string>
+    <string name="purchasing_contact_email" translatable="false">contact@keymapper.club</string>
+    <string name="customer_email_subject" translatable="false">Key Mapper Pro 查询</string>
+    <string name="customer_email_body" translatable="false">请填写以下信息，以便我帮助您。\n\n1. 设备型号:\n2. Android 版本:\n3. 按键映射 (在主屏幕菜单中进行备份):\n4. Key Mapper 主屏幕截图:\n5. 描述您遇到的问题:</string>
+    <string name="purchase_thank_you_title">感谢您对应用的支持！</string>
+    <string name="purchase_thank_you_message">您的购买成功。作为 Key Mapper 的付费用户，您将获得优先支持，以帮助您使用该应用。商店中现在有一个联系开发者的按钮。</string>
+    <string name="purchasing_not_implemented_bottom_sheet_text">高级触发器是付费功能，但您下载的是 Key Mapper 的 FOSS 版本，不包含此闭源模块或 Google Play 结算。请从 Google Play 下载 Key Mapper 以获取此功能。</string>
+    <string name="purchasing_download_key_mapper_from_google_play">下载 Play 版本</string>
+
+    <!-- 未录制到按键的底部表单 -->
+    <string name="no_keys_recorded_bottom_sheet_title">未检测到按钮？</string>
+    <string name="no_keys_recorded_bottom_sheet_text">您可以尝试使用 Key Mapper GUI 键盘应用来录制触发器，而不是使用无障碍服务。</string>
+    <string name="no_keys_recorded_setup_complete_text">设置完成！点击\'完成\'并尝试再次录制您的触发器。如果它不起作用，那么 Android 将不允许它被重映射 🫤。</string>
+
+    <!--  悬浮按钮  -->
+    <string name="floating_menu_tooltip_1">点击 </string>
+    <string name="floating_menu_tooltip_2"> 以显示/隐藏此菜单。</string>
+    <string name="floating_menu_tooltip_3">您可以将按钮放置在任何应用中，甚至是锁屏上。</string>
+    <string name="floating_menu_tooltip_dismiss">忽略</string>
+    <string name="floating_menu_help">帮助</string>
+    <string name="floating_menu_switch_layout">切换布局</string>
+    <string name="floating_menu_add_button">添加按钮</string>
+    <string name="floating_menu_done_button">返回</string>
+    <string name="floating_menu_hide_buttons">隐藏按钮</string>
+    <string name="floating_menu_show_buttons">显示按钮</string>
+    <string name="floating_button_menu_delete">删除</string>
+    <string name="floating_button_menu_configure">配置</string>
+    <string name="floating_button_menu_use_trigger">使用触发器</string>
+    <string name="floating_button_config_delete_button">删除</string>
+    <string name="floating_button_config_button_text_label">按钮文本 (提示: 使用表情符号)</string>
+    <string name="floating_button_config_button_size_label">按钮大小:</string>
+    <string name="floating_button_config_border_opacity_label">边框不透明度:</string>
+    <string name="floating_button_config_background_opacity_label">背景不透明度:</string>
+    <string name="floating_button_config_cancel_button">取消</string>
+    <string name="floating_button_config_done_button">完成</string>
+    <string name="floating_button_config_empty_text_error">按钮必须有文本！</string>
+    <string name="floating_button_config_show_over_status_bar">在通知面板上方显示</string>
+    <string name="floating_button_config_show_over_input_method">在键盘上方显示</string>
+    <string name="floating_buttons_product_title">悬浮按钮</string>
+    <string name="floating_buttons_product_description">悬浮按钮显示在您想要的应用上方。它们就像真实的按钮一样工作，您可以随心所欲地放置、设置样式和映射它们。</string>
+    <string name="floating_button_text_key_map_list_item">悬浮按钮 %s (%s)</string>
+    <string name="deleted_floating_button_text_key_map_list_item">已删除的悬浮按钮</string>
+    <string name="tip_caps_lock_pro_mode_title">更好的大写锁定兼容性</string>
+    <string name="tip_caps_lock_pro_mode_text">PRO 模式为大写锁定重映射提供了更好的兼容性。点击\'使用 PRO 模式\'并重新录制它。</string>
+    <string name="tip_caps_lock_pro_mode_button">使用 PRO 模式</string>
+    <string name="tip_volume_buttons_pro_mode_title">屏幕关闭重映射？</string>
+    <string name="tip_volume_buttons_pro_mode_text">现在任何触发器都可以在屏幕关闭时通过免费的 PRO 模式工作！您需要重新录制它。</string>
+    <string name="tip_volume_buttons_pro_mode_button">使用 PRO 模式</string>
+    <string name="tip_screen_pinning_title">应用固定警告</string>
+    <string name="tip_screen_pinning_text">使用返回键作为触发器可能会与应用固定冲突，导致解锁时出现黑屏。重启将解决此问题。</string>
+    <string name="tip_ime_detection_title">键盘图标</string>
+    <string name="tip_ime_detection_text">⌨ 符号表示由于 Android 限制，您必须使用 Key Mapper 输入法才能使此触发器工作。</string>
+    <string name="tip_ringer_mode_title">响铃模式动作</string>
+    <string name="tip_ringer_mode_text">考虑使用 PRO 模式进行响铃模式动作，以避免与\"请勿打扰\"设置冲突。</string>
+    <string name="tip_ringer_mode_button">使用 PRO 模式</string>
+    <string name="trigger_constraints_tip_title">限制到特定应用？</string>
+    <string name="trigger_constraints_tip_text">在约束条件标签页中添加约束条件。</string>
+    <string name="choose_floating_layout_title">选择一个布局</string>
+    <string name="bottom_app_bar_back_content_description">返回</string>
+    <string name="bottom_app_bar_help_content_description">帮助</string>
+    <string name="floating_menu_done_dialog_title">需要帮助吗？</string>
+    <string name="floating_menu_done_dialog_create_button">创建按钮</string>
+    <string name="floating_menu_done_dialog_choose_button">选择按钮</string>
+    <string name="floating_menu_done_dialog_quit_button">退出</string>
+    <string name="floating_menu_done_dialog_text_no_buttons">在使用悬浮按钮作为触发器之前，您需要先创建一个悬浮按钮。</string>
+    <string name="floating_menu_done_dialog_text_buttons">您需要选择一个悬浮按钮作为触发器。</string>
+    <string name="floating_button_trigger_option_configure_button">配置按钮</string>
+    <string name="floating_button_trigger_option_edit_layout">编辑布局</string>
+    <string name="floating_buttons_product_min_api_error">需要 Android 11 或更新版本。</string>
+
+    <!-- 主屏幕 -->
+    <string name="sort_bottom_sheet_trigger">触发器</string>
+    <string name="sort_bottom_sheet_actions">动作</string>
+    <string name="sort_bottom_sheet_constraints">约束条件</string>
+    <string name="sort_bottom_sheet_options">选项</string>
+    <string name="home_nav_bar_key_maps">按键映射</string>
+    <string name="home_nav_bar_floating_buttons">悬浮按钮</string>
+    <string name="home_fab_new_key_map">新建按键映射</string>
+    <string name="home_fab_new_floating_layout">新建布局</string>
+    <string name="home_key_map_list_footer_text">点击按键映射进行配置。\n长按查看更多选项。</string>
+    <string name="home_key_map_list_empty">创建一个按键映射！\n\n按键映射是告诉设备在按下按钮时该做什么的规则。</string>
+    <string name="home_floating_layouts_promo_title">按钮不够用？</string>
+    <string name="home_floating_layouts_promo_subtitle">自己制作！</string>
+    <string name="home_floating_layouts_promo_text">悬浮按钮显示在您想要的应用上方。它们就像真实的按钮一样工作，您可以随心所欲地放置、设置样式和映射它们。</string>
+    <string name="home_floating_layouts_hide_promo_button">隐藏此页面</string>
+    <string name="home_floating_layouts_empty_title">感谢您支持 Key Mapper ❤️！</string>
+    <string name="home_floating_layouts_empty_text">创建您的第一个布局！</string>
+    <string name="home_floating_layouts_explanation">布局让您可以将悬浮按钮组织成组。它们不影响哪些按钮可以显示。任何布局中的任何按钮都可以同时显示。</string>
+    <string name="home_floating_layouts_edit_name_content_description">更改布局 %s 的名称</string>
+    <string name="home_floating_layouts_delete_content_description">删除布局 %s</string>
+    <string name="home_floating_layouts_floating_buttons_subtitle">悬浮按钮</string>
+    <string name="home_floating_layouts_no_floating_buttons_subtitle">无按钮</string>
+    <string name="home_floating_layouts_edit_buttons_button">编辑按钮</string>
+    <string name="home_floating_layouts_add_buttons_button">添加按钮</string>
+    <string name="home_floating_layouts_name_dialog_title">更改布局名称</string>
+    <string name="home_floating_layouts_name_dialog_save">保存</string>
+    <string name="home_floating_layouts_name_dialog_empty_error">名称不能为空！</string>
+    <string name="home_floating_layouts_name_dialog_unique_error">名称必须唯一！</string>
+    <string name="home_floating_layouts_name_delete_dialog_title">删除 %s</string>
+    <string name="home_floating_layouts_name_delete_dialog_text">您确定要删除此悬浮按钮布局吗？</string>
+    <string name="home_floating_layouts_name_delete_yes">是的，删除</string>
+    <string name="home_floating_layouts_name_delete_cancel">取消</string>
+    <string name="home_floating_layouts_hide_dialog_title">隐藏悬浮布局</string>
+    <string name="home_floating_layouts_hide_dialog_text">您可以在创建触发器时通过高级触发器按钮找到悬浮按钮。</string>
+    <string name="home_floating_layouts_app_bar_title">悬浮按钮</string>
+    <string name="home_app_bar_menu">菜单</string>
+    <string name="home_app_bar_sort">排序</string>
+    <string name="home_app_bar_more">更多</string>
+    <string name="home_app_bar_help">帮助</string>
+    <string name="home_app_bar_select_all">全选</string>
+    <string name="home_app_bar_deselect_all">取消全选</string>
+    <string name="home_app_bar_cancel_selecting">停止选择</string>
+    <string name="home_app_bar_pop_group">返回上一级组</string>
+    <string name="home_app_bar_status_paused">已暂停</string>
+    <plurals name="home_app_bar_status_warnings">
+        <item quantity="one">1 个警告</item>
+        <item quantity="other">%d 个警告</item>
+    </plurals>
+    <string name="home_app_bar_status_running">运行中</string>
+    <string name="home_menu_settings">设置</string>
+    <string name="home_menu_delete_group">删除组</string>
+    <string name="home_menu_about">关于</string>
+    <string name="home_menu_export">导出全部</string>
+    <string name="home_menu_import">导入</string>
+    <string name="home_menu_input_method_picker">选择键盘</string>
+    <string name="home_importing_snackbar">导入中…</string>
+    <string name="home_importing_finished_snackbar">导入成功！</string>
+    <string name="home_exporting_snackbar">导出中…</string>
+    <string name="home_export_error_snackbar">失败: %s</string>
+    <string name="import_dialog_title_loading">加载文件中…</string>
+    <string name="import_dialog_title_success">导入成功！</string>
+    <string name="import_dialog_title_importing">导入中…</string>
+    <string name="import_dialog_title_error">错误</string>
+    <string name="import_dialog_button_launch_key_mapper">打开应用</string>
+    <plurals name="home_importing_dialog_title">
+        <item quantity="one">导入 1 个按键映射</item>
+        <item quantity="other">导入 %d 个按键映射</item>
+    </plurals>
+    <string name="home_importing_dialog_text">您是想替换所有现有的按键映射，还是将它们追加到列表中？</string>
+    <string name="home_importing_dialog_cancel">取消</string>
+    <string name="home_importing_dialog_dismiss">忽略</string>
+    <string name="home_importing_dialog_append">追加</string>
+    <string name="home_importing_dialog_replace">替换</string>
+    <string name="home_multi_select_duplicate">复制</string>
+    <string name="home_multi_select_delete">删除</string>
+    <string name="home_multi_select_export">导出</string>
+    <string name="home_enabled_key_maps_enabled">已启用</string>
+    <string name="home_enabled_key_maps_disabled">已禁用</string>
+    <string name="home_enabled_key_maps_mixed">混合</string>
+    <string name="home_move_to_group">移动到组</string>
+
+    <plurals name="home_key_maps_delete_dialog_title">
+        <item quantity="one">删除 1 个按键映射</item>
+        <item quantity="other">删除 %d 个按键映射</item>
+    </plurals>
+    <string name="home_key_maps_delete_dialog_text">您确定要删除这些按键映射吗？</string>
+    <string name="home_key_maps_delete_yes">是的，删除</string>
+    <string name="home_key_maps_delete_cancel">取消</string>
+    <string name="home_export_share_sheet_save_to_files">保存到文件</string>
+
+    <string name="home_new_group_button">新建组</string>
+    <string name="home_new_subgroup_button">新建子组</string>
+    <string name="home_new_view_all_groups_button">查看全部</string>
+    <string name="home_new_hide_groups_button">隐藏</string>
+    <string name="home_group_constraints_title">组约束条件</string>
+    <string name="home_group_new_constraint_button">新建约束条件</string>
+    <string name="home_group_delete_constraint_button">删除组约束条件</string>
+    <string name="home_this_group_button">此组</string>
+
+    <!-- 触发器屏幕 -->
+    <string name="trigger_key_list_item_remove">移除</string>
+    <string name="trigger_key_list_item_edit">编辑</string>
+    <string name="trigger_key_options_title">触发器按键选项</string>
+    <string name="trigger_key_device_header">设备</string>
+    <string name="trigger_key_assistant_type_header">助手类型</string>
+    <string name="trigger_key_fingerprint_gesture_type_header">指纹手势类型</string>
+    <string name="trigger_key_click_types_header">点击类型</string>
+    <string name="trigger_key_shortcut_use_floating_button">使用悬浮按钮</string>
+    <string name="trigger_key_shortcut_use_fingerprint_gesture">使用指纹手势</string>
+    <string name="trigger_key_shortcut_use_assistant">使用侧键触发器</string>
+    <string name="trigger_key_shortcut_add_floating_button">悬浮按钮</string>
+    <string name="trigger_key_shortcut_add_assistant">侧键触发器</string>
+    <string name="trigger_key_shortcut_add_fingerprint_gesture">指纹手势</string>
+    <string name="trigger_key_floating_button_description">悬浮按钮: %s</string>
+    <string name="trigger_key_fingerprint_gesture_up">向上滑动指纹读取器</string>
+    <string name="trigger_key_fingerprint_gesture_down">向下滑动指纹读取器</string>
+    <string name="trigger_key_fingerprint_gesture_left">向左滑动指纹读取器</string>
+    <string name="trigger_key_fingerprint_gesture_right">向右滑动指纹读取器</string>
+    <string name="trigger_shortcuts_header">高级触发器</string>
+    <string name="trigger_key_unknown_key_code">键码 %d</string>
+    <string name="trigger_key_unknown_scan_code">扫描码 %d</string>
+    <string name="trigger_key_scan_code_detection_flag">扫描码</string>
+    <string name="trigger_scan_code_detection_explanation">按键可以通过\'键码\'或\'扫描码\'来识别。扫描码比键码更唯一，但您的触发器可能无法在其他设备上工作。我们推荐使用键码。</string>
+    <string name="trigger_use_key_code_button_disabled">未知键码</string>
+    <string name="trigger_use_key_code_button_enabled">使用键码 %d</string>
+    <string name="trigger_use_scan_code_button_enabled">使用扫描码 %d</string>
+    <string name="trigger_use_scan_code_button_disabled">未保存扫描码</string>
+    <string name="trigger_record_with_pro_mode">使用 PRO 模式</string>
+    <string name="trigger_list_add_more_button">添加更多</string>
+
+    <!--  动作屏幕  -->
+    <string name="action_list_item_remove">移除</string>
+    <string name="action_list_item_edit">编辑</string>
+    <string name="action_list_item_test">测试</string>
+    <string name="actions_recyclerview_placeholder">添加动作以设置触发按键映射后应执行的操作。</string>
+    <string name="recently_used_actions">最近使用的动作</string>
+    <string name="action_options_title">动作选项</string>
+    <string name="slider_reset_content_description">重置</string>
+    <string name="slider_default_button">默认: %s</string>
+    <string name="choose_action_title">选择一个动作</string>
+    <string name="search_placeholder">搜索…</string>
+    <string name="action_list_empty">这里空空如也！</string>
+    <string name="action_list_delete_dialog_title">删除动作</string>
+    <string name="action_list_delete_dialog_text">您确定要删除此动作吗？</string>
+    <string name="action_list_delete_yes">是的，删除</string>
+    <string name="action_list_delete_cancel">取消</string>
+    <string name="action_list_explanation_header">当您触发此按键映射时运行这些动作：</string>
+
+    <string name="action_config_flashlight_choose_side">选择侧边</string>
+    <string name="action_config_flashlight_brightness">亮度</string>
+    <string name="action_config_flashlight_brightness_min">最小</string>
+    <string name="action_config_flashlight_brightness_half">一半</string>
+    <string name="action_config_flashlight_brightness_max">最大</string>
+    <string name="action_config_flashlight_brightness_test">测试</string>
+    <string name="action_config_flashlight_brightness_unsupported_android_version">需要 Android 13 或更新版本。</string>
+    <string name="action_config_flashlight_brightness_unsupported">此设备不允许您更改亮度。</string>
+    <string name="action_config_flashlight_brightness_factor">亮度变化</string>
+
+    <string name="action_config_volume_stream">音量流</string>
+    <string name="action_config_volume_stream_default">默认 (系统控制)</string>
+    <string name="action_config_volume_options">选项</string>
+
+    <string name="choose_action_group_unsupported">不支持</string>
+
+    <!--  约束条件屏幕  -->
+    <string name="constraints_recyclerview_placeholder">如果您希望按键映射仅在某些情况下工作，请添加约束条件。</string>
+    <string name="recently_used_constraints">最近使用的约束条件</string>
+    <string name="constraint_list_item_remove">移除</string>
+    <string name="constraint_list_delete_dialog_title">删除约束条件</string>
+    <string name="constraint_list_delete_dialog_text">您确定要删除此约束条件吗？</string>
+    <string name="constraint_list_delete_yes">是的，删除</string>
+    <string name="constraint_list_delete_cancel">取消</string>
+    <string name="constraint_mode_title">逻辑模式</string>
+    <string name="choose_constraint_title">选择一个约束条件</string>
+    <string name="constraint_list_explanation_header">此按键映射仅在满足以下条件时运行：</string>
+
+    <!--  组  -->
+    <string name="default_group_name">未命名组</string>
+    <string name="home_app_bar_edit_group_name">编辑组名称</string>
+    <string name="home_app_bar_save_group_name">保存组名称</string>
+    <string name="home_app_bar_group_name_unique_error">名称必须唯一！</string>
+    <string name="home_groups_breadcrumb_home">主页</string>
+    <string name="home_delete_group_button">删除组</string>
+    <string name="home_key_maps_delete_group_dialog_title">删除组 %s</string>
+    <string name="home_key_maps_delete_group_dialog_text">您确定要删除此组吗？此组及其子组中的所有按键映射也将被删除！</string>
+    <string name="home_key_maps_delete_group_yes">是的，删除</string>
+    <string name="home_key_maps_delete_group_cancel">取消</string>
+    <plurals name="home_groups_inherited_constraints">
+        <item quantity="one">+%d 个继承的约束条件</item>
+        <item quantity="other">+%d 个继承的约束条件</item>
+    </plurals>
+
+
+    <!--  PRO 模式  -->
+    <string name="pro_mode_app_bar_title">PRO 模式</string>
+    <string name="pro_mode_warning_title">重要！</string>
+    <string name="pro_mode_warning_text">使用 PRO 模式重映射按钮是危险的，如果重映射不正确，可能会导致它们停止工作。\n\n如果您犯了错误，您可能需要通过按住电源和音量键 30 秒来强制重启设备 — 请查阅您的设备手册或互联网了解如何操作。</string>
+    <string name="pro_mode_warning_understand_button_countdown">%d…</string>
+    <string name="pro_mode_warning_understand_button_not_completed">我明白了</string>
+    <string name="pro_mode_warning_understand_button_completed">明白了</string>
+    <string name="pro_mode_set_up_title">设置</string>
+    <string name="pro_mode_root_detected_title">检测到 Root</string>
+    <string name="pro_mode_root_detected_text">您可以通过授予 Key Mapper Root 权限来跳过设置过程。这也将允许 Key Mapper 在启动时自动启动 PRO 模式。</string>
+    <string name="pro_mode_root_detected_button_start_service">启动 PRO 模式</string>
+    <string name="pro_mode_shizuku_detected_title">检测到 Shizuku</string>
+    <string name="pro_mode_shizuku_detected_text">您可以通过授予 Key Mapper Shizuku 权限来跳过设置过程。</string>
+    <string name="pro_mode_shizuku_detected_button_start">启动 Shizuku</string>
+    <string name="pro_mode_shizuku_detected_button_request_permission">请求权限</string>
+    <string name="pro_mode_shizuku_detected_button_start_service">启动 PRO 模式</string>
+    <string name="pro_mode_set_up_with_key_mapper_title">使用 Key Mapper 设置</string>
+    <string name="pro_mode_set_up_with_key_mapper_button">继续</string>
+    <string name="pro_mode_set_up_with_key_mapper_button_incompatible">继续 (Android 11+)</string>
+    <string name="pro_mode_options_title">选项</string>
+    <string name="pro_mode_enable_for_all_key_maps_title">为所有按键映射启用 PRO 模式</string>
+    <string name="pro_mode_enable_for_all_key_maps_text">Key Mapper 将使用 ADB Shell 进行重映射</string>
+    <string name="pro_mode_settings_unavailable_text">在您确认警告之前，这些设置不可用。</string>
+    <string name="pro_mode_service_started">PRO 模式服务正在运行</string>
+    <string name="pro_mode_stop_service_button">停止</string>
+
+    <string name="title_pref_pro_mode_auto_start_at_boot">开机时自动启动</string>
+    <string name="summary_pref_pro_mode_auto_start_at_boot">每当您打开或重启设备时，PRO 模式将自行启动</string>
+
+    <string name="title_pref_key_event_actions_use_system_bridge">按键事件动作</string>
+    <string name="summary_pref_key_event_actions_use_system_bridge">选择按键事件动作的执行方式</string>
+
+    <string name="pro_mode_emergency_tip_title">紧急提示</string>
+    <string name="pro_mode_emergency_tip_text">如果您的电源键停止工作，请按住电源键 10 秒钟然后释放以禁用 PRO 模式。</string>
+
+    <string name="pro_mode_setup_wizard_title">设置向导</string>
+    <string name="pro_mode_setup_wizard_step_n">第 %d 步，共 %d 步</string>
+    <string name="pro_mode_setup_wizard_use_assistant">使用交互式设置助手</string>
+    <string name="pro_mode_setup_wizard_use_assistant_description">自动与设置交互</string>
+    <string name="pro_mode_setup_wizard_use_assistant_enable_accessibility_service">请先启用无障碍服务</string>
+    <string name="pro_mode_setup_wizard_watch_tutorial_button">观看教程</string>
+    <string name="pro_mode_setup_wizard_enable_accessibility_service_button">启动服务</string>
+    <string name="pro_mode_setup_wizard_go_to_settings_button">转到设置</string>
+    <string name="pro_mode_setup_wizard_start_service_button">启动服务</string>
+
+    <string name="pro_mode_setup_wizard_enable_accessibility_service_title">启用无障碍服务</string>
+    <string name="pro_mode_setup_wizard_enable_accessibility_service_description">Key Mapper 使用服务来帮助您设置 PRO 模式。它对于普通的按键映射也很有用。</string>
+
+    <string name="pro_mode_setup_wizard_enable_developer_options_title">启用开发者选项</string>
+    <string name="pro_mode_setup_wizard_enable_developer_options_description">Key Mapper 需要使用 Android 调试桥来启动 PRO 模式，为此您需要启用开发者选项。</string>
+
+    <string name="pro_mode_setup_wizard_connect_wifi_title">连接到 WiFi 网络</string>
+    <string name="pro_mode_setup_wizard_connect_wifi_description">Key Mapper 需要 WiFi 网络来启用 ADB。您不需要互联网连接。\n\n没有 WiFi 网络？使用他人手机的热点。</string>
+
+    <string name="pro_mode_setup_wizard_enable_wireless_debugging_title">启用无线调试</string>
+    <string name="pro_mode_setup_wizard_enable_wireless_debugging_description">Key Mapper 使用无线调试来启动其重映射和输入服务。</string>
+
+    <string name="pro_mode_setup_wizard_pair_wireless_debugging_title">配对无线调试</string>
+    <string name="pro_mode_setup_wizard_pair_wireless_debugging_description">Key Mapper 需要与无线调试配对，然后才能启动其重映射和输入服务。</string>
+
+    <string name="pro_mode_setup_wizard_start_service_title">启动服务</string>
+    <string name="pro_mode_setup_wizard_start_service_description">Key Mapper 需要连接到 Android 调试桥以启动 PRO 模式服务。</string>
+
+    <string name="pro_mode_setup_wizard_enable_notification_permission_title">允许通知</string>
+    <string name="pro_mode_setup_wizard_enable_notification_permission_description">Key Mapper 需要权限才能在设置过程中出现任何问题时通知您。</string>
+    <string name="pro_mode_setup_wizard_enable_notification_permission_button">授予权限</string>
+
+    <string name="pro_mode_setup_assistant_notification_channel">设置助手</string>
+
+    <string name="pro_mode_setup_wizard_complete_title">PRO 模式正在运行</string>
+    <string name="pro_mode_setup_wizard_complete_text">您现在可以在屏幕关闭时重映射按钮并使用更多动作。</string>
+
+    <string name="pro_mode_setup_wizard_complete_button">完成</string>
+
+    <string name="pro_mode_setup_notification_tap_build_number_title">启用开发者选项</string>
+    <string name="pro_mode_setup_notification_tap_build_number_text">重复点击版本号</string>
+
+    <string name="pro_mode_setup_notification_pairing_title">自动配对中</string>
+    <string name="pro_mode_setup_notification_pairing_text">正在搜索配对代码和端口…</string>
+
+    <string name="pro_mode_setup_notification_pairing_button_not_found_title">无法找到配对端口和代码</string>
+    <string name="pro_mode_setup_notification_pairing_button_not_found_text">点击按钮使用配对代码配对，并在此处输入代码</string>
+
+    <string name="pro_mode_setup_notification_start_system_bridge_failed_title">启动 PRO 模式失败</string>
+    <string name="pro_mode_setup_notification_start_system_bridge_failed_text">点击重新设置。如果反复失败，请尝试 ADB 配对并重启手机。</string>
+
+    <string name="pro_mode_setup_notification_auto_start_system_bridge_title">自动启动 PRO 模式</string>
+    <string name="pro_mode_setup_notification_auto_start_system_bridge_root_text">使用 Root</string>
+    <string name="pro_mode_setup_notification_auto_start_system_bridge_shizuku_text">使用 Shizuku</string>
+    <string name="pro_mode_setup_notification_auto_start_system_bridge_adb_text">使用 WiFi 上的 ADB</string>
+
+    <string name="pro_mode_setup_notification_system_bridge_started_title">PRO 模式已启动</string>
+    <string name="pro_mode_setup_notification_system_bridge_started_text">祝您重映射愉快！ ❤️</string>
+
+    <string name="pro_mode_setup_notification_invalid_pairing_code_title">配对失败</string>
+    <string name="pro_mode_setup_notification_invalid_pairing_code_text">提交配对代码时请保持配对代码弹出窗口在屏幕上</string>
+    <string name="pro_mode_setup_notification_action_input_pairing_code">输入配对代码</string>
+
+    <string name="pro_mode_info_card_title">我可以用 PRO 模式做什么？</string>
+    <string name="pro_mode_info_card_description">📲 您可以重映射更多按钮，例如电源键。\n⌨️ 将任何键盘与键码动作一起使用。\n⭐️ 以下动作已解锁：WiFi、蓝牙、移动数据、NFC 和飞行模式、收起状态栏以及休眠/唤醒设备。</string>
+    <string name="pro_mode_info_card_show_content_description">显示 PRO 模式信息</string>
+    <string name="pro_mode_info_card_dismiss_content_description">忽略</string>
+
+    <string name="system_bridge_died_notification_title">PRO 模式意外停止</string>
+    <string name="system_bridge_died_notification_restarting_text">正在自动重启…</string>
+    <string name="system_bridge_died_notification_not_restarting_text">未自动重启。如果您没有终止服务，请向开发者报告问题。</string>
+
+    <!-- 触发器发现屏幕 -->
+    <string name="trigger_discover_screen_title">发现</string>
+    <string name="trigger_discover_screen_subtitle">您想重映射什么？</string>
+    <string name="trigger_discover_section_on_device_buttons">设备上的按钮</string>
+    <string name="trigger_discover_section_peripherals_gaming">外设 &amp; 游戏</string>
+    <string name="trigger_discover_section_floating_buttons">悬浮按钮</string>
+
+    <string name="trigger_discover_shortcut_volume">音量</string>
+    <string name="trigger_discover_shortcut_assistant">助手</string>
+    <string name="trigger_discover_shortcut_power">电源</string>
+    <string name="trigger_discover_shortcut_fingerprint_gesture">指纹手势</string>
+    <string name="trigger_discover_shortcut_keyboard">键盘</string>
+    <string name="trigger_discover_shortcut_mouse">鼠标</string>
+    <string name="trigger_discover_shortcut_gamepad">游戏手柄</string>
+    <string name="trigger_discover_shortcut_other">其他</string>
+    <string name="trigger_discover_shortcut_custom">自定义</string>
+    <string name="trigger_discover_shortcut_notch">刘海屏</string>
+    <string name="trigger_discover_shortcut_lock_screen">锁屏</string>
+
+    <string name="trigger_discover_promo_title">升级您的体验</string>
+    <string name="trigger_discover_promo_description">悬浮按钮是在任何应用、游戏或锁屏上的即时快捷方式。您的支持让 Key Mapper 保持活力 ❤️</string>
+    <string name="trigger_discover_promo_see_action">观看演示</string>
+    <string name="trigger_discover_promo_dismiss">忽略</string>
+    <string name="trigger_discover_promo_unlock">仅需 %s 即可解锁</string>
+    <!-- 触发器发现屏幕 -->
+
+    <!-- 触发器设置底部表单 -->
+    <string name="trigger_setup_volume_title">音量键</string>
+    <string name="trigger_setup_keyboard_title">键盘</string>
+    <string name="trigger_setup_power_title">电源键</string>
+    <string name="trigger_setup_assistant_trigger_title">助手触发器</string>
+    <string name="trigger_setup_assistant_trigger_add_on">助手触发器附加组件</string>
+    <string name="trigger_setup_mouse_title">鼠标按键</string>
+    <string name="trigger_setup_gamepad_title">游戏手柄按键</string>
+    <string name="trigger_setup_other_title">其他按键</string>
+    <string name="trigger_setup_fingerprint_reader_title">指纹读取器手势</string>
+    <string name="trigger_setup_no_trigger_detected_title">未检测到触发器</string>
+    <string name="trigger_setup_add_trigger_button">点击添加触发器</string>
+    <string name="trigger_setup_requirements_not_met_button">要求未满足</string>
+    <string name="trigger_setup_get_help_button">获取帮助</string>
+    <string name="trigger_setup_status_can_not_remap">您无法重映射此按钮</string>
+    <string name="trigger_setup_status_can_not_use_feature">您无法使用此功能</string>
+    <string name="trigger_setup_status_might_remap_button">您或许能够重映射此按钮</string>
+    <string name="trigger_setup_status_might_remap_device">您或许能够重映射此设备</string>
+    <string name="trigger_setup_status_might_use_feature">您或许能够使用此功能</string>
+    <string name="trigger_setup_status_remap_button_possible">您可以重映射此按钮</string>
+    <string name="trigger_setup_status_remap_device_possible">您可以重映射此设备</string>
+    <string name="trigger_setup_status_feature_possible">您可以使用此功能</string>
+    <string name="trigger_setup_screen_off_option">屏幕关闭时重映射</string>
+    <string name="trigger_setup_screen_off_option_keyboard">屏幕关闭时重映射</string>
+    <string name="trigger_setup_options_title">选项</string>
+    <string name="trigger_setup_requirements_title">要求</string>
+    <string name="trigger_setup_not_detected_information">如果您的按钮仍然无法被检测到，请加入我们的 Discord 服务器并告知我们。我们将尽力帮助您重映射按钮。</string>
+    <string name="trigger_setup_get_help_information">如果您的按钮无法被检测到，请加入我们的 Discord 服务器并告知我们。我们将尽力帮助您重映射按钮。</string>
+    <string name="trigger_setup_information_title">信息</string>
+    <string name="trigger_setup_accessibility_service_title">无障碍服务</string>
+    <string name="trigger_setup_accessibility_service_enable_button">启用</string>
+    <string name="trigger_setup_accessibility_service_running_button">运行中</string>
+    <string name="trigger_setup_purchased_button">已购买</string>
+    <string name="trigger_setup_pro_mode_title">PRO 模式</string>
+    <string name="trigger_setup_pro_mode_enable_button">免费启用</string>
+    <string name="trigger_setup_pro_mode_running_button">运行中</string>
+    <string name="trigger_setup_pro_mode_unsupported">此 Android 版本不可用</string>
+    <string name="trigger_setup_assistant_information">如果您的设备助手由硬件按钮触发，或许可以通过免费的 PRO 模式重映射它。请尝试从触发器页面选择\'其他\'并按照说明操作。</string>
+    <string name="trigger_setup_assistant_requirements_met_info">此触发器需要一些设置，具体设置因设备而异。请\ </string>
+    <string name="trigger_setup_assistant_read_instructions_link">阅读说明</string>
+    <string name="trigger_setup_assistant_read_instructions_button">阅读说明</string>
+    <string name="trigger_setup_assistant_select_type_button">选择触发器类型</string>
+    <string name="trigger_setup_power_information">如果您的设备助手由电源键触发，或许可以改为重映射助手，这意味着您不需要使用 PRO 模式。请尝试从触发器页面选择\'助手\'并按照说明操作。</string>
+    <string name="trigger_setup_gamepad_type_dpad">方向键按钮</string>
+    <string name="trigger_setup_gamepad_type_simple_buttons">其他简单按钮</string>
+    <string name="trigger_setup_gamepad_information_dpad">重映射方向键按钮时，您将无法使用正常的屏幕键盘。</string>
+    <string name="trigger_setup_input_method_title">Key Mapper 输入法</string>
+    <string name="trigger_setup_input_method_enable_button">启用</string>
+    <string name="trigger_setup_input_method_choose_button">选择</string>
+    <string name="trigger_setup_input_method_running_button">运行中</string>
+    <!-- 触发器设置底部表单 -->
+
+    <!--  修复按键事件动作底部表单  -->
+    <string name="fix_key_event_action_title">修复按键事件动作</string>
+    <string name="fix_key_event_action_text">使用此动作需要额外的步骤。选择您要使用的方法：</string>
+    <string name="fix_key_event_action_input_method_title">Key Mapper 输入法</string>
+    <string name="fix_key_event_action_input_method_text">无屏幕键盘</string>
+    <string name="fix_key_event_action_pro_mode_text_1">可以始终使用您的正常屏幕键盘</string>
+    <string name="fix_key_event_action_pro_mode_text_2">与应用和游戏更好的兼容性</string>
+    <string name="fix_key_event_action_enable_input_method_button">启用 Key Mapper 输入法</string>
+    <string name="fix_key_event_action_use_input_method_button">使用 Key Mapper 输入法</string>
+    <string name="fix_key_event_action_auto_switch_ime_text">在输入时自动切换到正常屏幕键盘</string>
+    <string name="fix_key_event_action_change_in_settings_caption">您始终可以在设置中更改此选项</string>
+    <string name="fix_key_event_action_setup_title">设置</string>
+    <string name="fix_key_event_action_options_title">选项</string>
+
+    <string name="button_test_sms">测试短信</string>
+    <string name="test_sms_result_ok">发送成功！</string>
+    <string name="warning_sms_charges">发送短信可能会产生运营商或漫游费用。Key Mapper 开发者不对任何费用负责。</string>
+    <string name="hint_shell_command_description">描述</string>
+    <string name="hint_shell_command_timeout">超时</string>
+
+    <!-- 悬浮按钮评论卡片 -->
+    <string name="floating_buttons_review_card_title">您喜欢悬浮按钮吗？</string>
+    <string name="floating_buttons_review_card_message">我们很想知道！请考虑在 Google Play 上留下评论，以帮助其他人发现此功能。 ❤️</string>
+    <string name="floating_buttons_review_card_dismiss">忽略</string>
+
+</resources>
